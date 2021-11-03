@@ -1,4 +1,6 @@
 <p>productos works!</p>
-<app-card>
-    
-</app-card>
+<div *ngFor="let card of cards">
+    <app-card [urlImage]="card.UrlImagen">
+      
+    </app-card>
+  </div>
