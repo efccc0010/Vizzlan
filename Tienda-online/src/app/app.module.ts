@@ -12,6 +12,7 @@ import { NavBarComponent } from './elements/nav-bar/nav-bar.component';
 import { LoginComponent } from './CUS01/login/login.component';
 import { IngresarComponent } from './CUS01/ingresar/ingresar.component';
 import { CarritoCompraComponent } from './CUS04/carrito-compra/carrito-compra.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { CarritoCompraComponent } from './CUS04/carrito-compra/carrito-compra.co
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
