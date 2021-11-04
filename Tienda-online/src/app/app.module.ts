@@ -11,6 +11,7 @@ import { SliderCardComponent } from './elements/slider-card/slider-card.componen
 import { NavBarComponent } from './elements/nav-bar/nav-bar.component';
 import { LoginComponent } from './CUS01/login/login.component';
 import { IngresarComponent } from './CUS01/ingresar/ingresar.component';
+import { CarritoCompraComponent } from './CUS04/carrito-compra/carrito-compra.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { IngresarComponent } from './CUS01/ingresar/ingresar.component';
     SliderCardComponent,
     NavBarComponent,
     LoginComponent,
-    IngresarComponent
+    IngresarComponent,
+    CarritoCompraComponent
   ],
   imports: [
     BrowserModule,
