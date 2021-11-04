@@ -12,6 +12,7 @@ import { NavBarComponent } from './elements/nav-bar/nav-bar.component';
 import { LoginComponent } from './CUS01/login/login.component';
 import { IngresarComponent } from './CUS01/ingresar/ingresar.component';
 import { CarritoCompraComponent } from './CUS04/carrito-compra/carrito-compra.component';
+import { PedidoEspecialComponent } from './CUS15/pedido-especial/pedido-especial.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CarritoCompraComponent } from './CUS04/carrito-compra/carrito-compra.co
     NavBarComponent,
     LoginComponent,
     IngresarComponent,
-    CarritoCompraComponent
+    CarritoCompraComponent,
+    PedidoEspecialComponent
   ],
   imports: [
     BrowserModule,
