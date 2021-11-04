@@ -2,8 +2,9 @@
     <div class="container-fluid">
       <a class="navbar-brand" href="#">VIZZLAN</a>
       <form class="d-flex">
-        <button class="btn btn-outline-success" type="submit" routerLink="Carrito-compra">Carrito</button>
-        <button class="btn btn-outline-success" type="submit" routerLink="Ingresar">Login</button>
+        <a routerLink="Carrito-compra" class="nav-link" style="color:black"> <span> <i class="bi bi-cart-fill mx-2"></i> <span>Cantidad</span>Productos | S/. MontoTotal </span> </a>
+        <a routerLink="Ingresar" class="nav-link" style="color:black">Login <i class="bi bi-person-circle"></i></a>
+  
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -17,8 +18,8 @@
           <div class="col-4">
             <div class="row">
               <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <input class="form-control me-2" type="search" placeholder="Ingrese busqueda" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
             </form>
             </div>
           </div>
