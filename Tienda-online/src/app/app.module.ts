@@ -9,6 +9,8 @@ import { ProductosComponent } from './Vistas/productos/productos.component';
 import { CardComponent } from './elements/card/card.component';
 import { SliderCardComponent } from './elements/slider-card/slider-card.component';
 import { NavBarComponent } from './elements/nav-bar/nav-bar.component';
+import { LoginComponent } from './CUS01/login/login.component';
+import { IngresarComponent } from './CUS01/ingresar/ingresar.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { NavBarComponent } from './elements/nav-bar/nav-bar.component';
     ProductosComponent,
     CardComponent,
     SliderCardComponent,
-    NavBarComponent
+    NavBarComponent,
+    LoginComponent,
+    IngresarComponent
   ],
   imports: [
     BrowserModule,
