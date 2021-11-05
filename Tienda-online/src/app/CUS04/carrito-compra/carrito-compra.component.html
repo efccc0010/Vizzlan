@@ -17,74 +17,9 @@
     </div>      
     <div class="row my-5">
         <div class="col-lg-8 mb-4">
-            <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Producto</th>
-                    <th scope="col">Precio Unit</th>
-                    <th scope="col">Cantidad</th>
-                    <th scope="col">Subtotal</th>
-                    <th scope="col"> </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">P001</th>
-                    <td>xxxxxxxxxx</td>
-                    <td>S/.75</td>
-                    <td>
-                        <select class="form-select" style="width: 80%;">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="1">4</option>
-                            <option value="2">5</option>
-                            <option value="3">6</option>
-                            <option value="1">7</option>
-                            <option value="2">8</option>
-                            <option value="3">9</option>
-                            <option value="1">10</option>
-                            <option value="2">11</option>
-                            <option value="3">12</option>
-                          </select>
-                    </td>
-                    <td>S/.150</td>
-                    <td>
-                        <a href="">
-                            <i class="bi bi-trash"></i>
-                        </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">P002</th>
-                    <td>xxxxxxxxxxxx</td>
-                    <td>S/.75</td>
-                    <td><select class="form-select" style="width: 80%">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="1">4</option>
-                        <option value="2">5</option>
-                        <option value="3">6</option>
-                        <option value="1">7</option>
-                        <option value="2">8</option>
-                        <option value="3">9</option>
-                        <option value="1">10</option>
-                        <option value="2">11</option>
-                        <option value="3">12</option>
-                      </select></td>
-                    <td>S/.225</td>
-                    <td>
-                        <a href="" class="mt-3">
-                            <i class="bi bi-trash mt-3"></i>
-                        </a>
-                    </td>
-                  </tr>
-                  
-                  
-                </tbody>
-              </table>
+            <app-lista-productos [ProductosCarrito]="ProductosCarrito">
+
+            </app-lista-productos>
         </div>
         <div class="col-4">
             <div class="card">
@@ -94,12 +29,12 @@
                 <div class="card-body">
                   <h5 class="card-title">Resumen</h5>
                   <ul class=" list-group list-group-flush">
-                    <li class="list-group-item">Cantidad de productos</li>
-                    <li class="list-group-item">Subtotal</li>
-                    <li class="list-group-item">Total a pagar</li>
+                    <li class="list-group-item">Cantidad de productos: </li>
+                    <li class="list-group-item">Subtotal: </li>
+                    <li class="list-group-item">Total a pagar: </li>
                   </ul>
                   <div class="d-grid gap-2">
-                    <button class="btn btn-primary" type="button">Comprar</button>
+                    <button class="btn btn-primary" type="button"><i class="bi bi-cart-fill me-3"></i>Comprar</button>
                   </div>
                 </div>
               </div>
