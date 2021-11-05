@@ -1,0 +1,27 @@
+.lista-producto{
+    text-align: center;
+    align-items: center;
+}
+.visualizar-decoracion{
+    text-align: center;
+    align-items: center;
+}
+.datos-pedido-especial{
+    text-align: center;
+    align-items: center;
+}
+.fit-image{
+    width: 150px;
+    object-fit: cover;
+    height: 250px; /* only if you want fixed height */
+    border-radius: 25px;
+}
+.fit-image2{
+    width: 230px;
+    object-fit: cover;
+    height: 300px;
+    border-radius: 25px;
+}
+.margin-left{
+    margin-left: 80px !important;
+}

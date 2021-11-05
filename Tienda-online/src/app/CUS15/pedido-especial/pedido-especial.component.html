@@ -1,36 +1,152 @@
-<section class = "lista-producto">
-    <h1>LISTA DE ROPA</h1>
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+<div class="container">
+    <div class="row">
+        <app-nav-bar></app-nav-bar>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a routerLink="">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Pedido especial</li>
+                </ol>
+              </nav>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./assets/imagenes/decoracion1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/imagenes/decoracion2.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/imagenes/decoracion3.jpg" class="d-block w-100" alt="...">
-          </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <h2 class="text-center">PRODUCTOS</h2>
+            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                        <div class="row" class="text-center">
+                            <img src="./assets/imagenes/producto4.jpg" class="img-responsive fit-image2">
+                        </div>
+                        <div class="row-md">
+                            <table class="table">
+                                <tbody>
+                                <tr>
+                                    <th scope="row">CANTIDAD</th>
+                                    <td class="text-end"><input type = "number" id="number"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">DECORACIÓN AÑADIDA</th>
+                                    <td class="text-end">DECORACION001</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">PRECIO</th>
+                                    <td class="text-end">S/ 10.00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">MONTO DECORACIÓN</th>
+                                    <td class="text-end">S/ 1000.00</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row" class="text-center">
+                        <img src="./assets/imagenes/producto5.jpg" class="img-responsive fit-image2">
+                    </div>
+                    <div class="row-md">
+                        <table class="table">
+                            <tbody>
+                            <tr>
+                                <th scope="row">CANTIDAD</th>
+                                <td class="text-end"><input type = "number" id="number"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">DECORACIÓN AÑADIDA</th>
+                                <td class="text-end">DECORACION001</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">PRECIO</th>
+                                <td class="text-end">S/ 10.00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">MONTO DECORACIÓN</th>
+                                <td class="text-end">S/ 1000.00</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-</section>
-<section class = "visualizar-decoraciones">
-    <h1>VISUALIZAR DECORACIONES PREDETERMINADAS</h1>
-</section>
-<section class = "datos-pedido">
-    <h1>DATOS DE PEDIDO ESPECIAL</h1>
-</section>
-<p>pedido-especial works!</p>
+        <div class="col-6">
+            <h2 class="text-center">DECORACIONES</h2>
+            <div class="row justify-content-center">
+                <div class="col">
+                    <img src="./assets/imagenes/decoracion1.jpg" class="img-responsive fit-image" >
+                    <h5 class="text-center">Decoración 1</h5>
+                </div>
+                <div class="col order-1">
+                    <img src="./assets/imagenes/decoracion2.png" class="img-responsive fit-image">
+                    <h5 class="text-center">Decoración 2</h5>
+                </div>
+                <div class="col order-5">
+                    <img src="./assets/imagenes/decoracion3.jpg" class="img-responsive fit-image">
+                    <h5 class="text-center">Decoración 3</h5>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col">
+                    <button type="button" class="btn btn-primary btn-lg">Más decoraciones</button>
+                </div>
+                <div class="col order-3">
+                    <button type="button" class="btn btn-secondary btn-lg">Agregar decoración</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" class="row justify-content-md-center">
+        <div class="col-6">
+            <h2 class="text-center">RESUMEN DE PEDIDO ESPECIAL</h2>
+            <table class="table">
+                <tbody>
+                <tr>
+                    <th scope="row" >NÚMERO DE PRODUCTOS</th>
+                    <td class="text-end">100</td>
+                </tr>
+                <tr>
+                    <th scope="row" >NÚMERO DE DECORACIONES</th>
+                    <td class="text-end">1</td>
+                </tr>
+                <tr>
+                    <td scope="row" >VALOR DEL PEDIDO</td>
+                    <td class="text-end">S/ 8990.00</td>
+                </tr>
+                <tr>
+                    <td scope="row">DESCUENTO</td>
+                    <td class="text-end">S/ 0.00</td>
+                </tr>
+                <tr>
+                    <td scope="row">SUBTOTAL DECORACIÓN</td>
+                    <td class="text-end">S/ 820.00</td>
+                </tr>
+                <tr>
+                    <td scope="row">SUBTOTAL PRODUCTO</td>
+                    <td class="text-end">S/ 6551.80</td>
+                </tr>
+                <tr>
+                    <td scope="row">IGV (18%) </td>
+                    <td class="text-end">S/ 1618.20</td>
+                </tr>
+                <tr>
+                    <th scope="row">TOTAL A PAGAR</th>
+                    <td class="text-end">S/ 8990.00</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
