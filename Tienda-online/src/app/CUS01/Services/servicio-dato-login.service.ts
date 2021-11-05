@@ -4,6 +4,6 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ServicioDatoLoginService {
-  nombreUsuario:String=''
+  nombreUsuario:any=null
   constructor() { }
 }
