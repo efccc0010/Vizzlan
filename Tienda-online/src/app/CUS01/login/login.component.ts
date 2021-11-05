@@ -13,7 +13,8 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
   FuncionIngresar(){
-    this.servicioComunicacion.nombreUsuario=this.Usuario
+    this.servicioComunicacion.nombreUsuario=this.Usuario;
+    alert('Usuario aceptado')
   }
 
 }
