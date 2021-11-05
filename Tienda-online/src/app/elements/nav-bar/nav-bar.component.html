@@ -3,8 +3,19 @@
       <a class="navbar-brand" href="#">VIZZLAN</a>
       <form class="d-flex">
         <a routerLink="Carrito-compra" class="nav-link" style="color:black"> <span> <i class="bi bi-cart-fill mx-2"></i> <span>Cantidad</span>Productos | S/. MontoTotal </span> </a>
-        <a routerLink="Ingresar" class="nav-link" style="color:black">{{servicioComunicacion.nombreUsuario}}<i class="bi bi-person-circle"></i></a>
-  
+        <a routerLink="Ingresar" class="nav-link" style="color:black" *ngIf="servicioComunicacion.nombreUsuario==null">Login<i class="bi bi-person-circle"></i></a>
+        <div class="btn-group mx-4" >
+          <button *ngIf="servicioComunicacion.nombreUsuario!=null"  type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #f8f9fa;">
+            <i class="bi bi-person-circle"></i><span class="ms-3">{{servicioComunicacion.nombreUsuario}} </span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Mi Perfil</a></li>
+            <li><a class="dropdown-item" href="#">Mis Pedidos</a></li>
+            <li><a class="dropdown-item" routerLink="Pedido-especial">Pedido Especial</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Pedido de Produccion</a></li>
+          </ul>
+        </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>

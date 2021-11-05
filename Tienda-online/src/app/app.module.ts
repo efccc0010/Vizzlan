@@ -14,6 +14,7 @@ import { IngresarComponent } from './CUS01/ingresar/ingresar.component';
 import { CarritoCompraComponent } from './CUS04/carrito-compra/carrito-compra.component';
 import { FormsModule } from '@angular/forms';
 import { PedidoEspecialComponent } from './CUS15/pedido-especial/pedido-especial.component';
+import { CarruselComponent } from './elements/carrusel/carrusel.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { PedidoEspecialComponent } from './CUS15/pedido-especial/pedido-especial
     LoginComponent,
     IngresarComponent,
     CarritoCompraComponent,
-    PedidoEspecialComponent
+    PedidoEspecialComponent,
+    CarruselComponent
   ],
   imports: [
     BrowserModule,

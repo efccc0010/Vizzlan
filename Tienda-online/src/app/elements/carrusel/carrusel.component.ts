@@ -1,13 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-inicio',
-  templateUrl: './inicio.component.html',
-  styleUrls: ['./inicio.component.scss']
+  selector: 'app-carrusel',
+  templateUrl: './carrusel.component.html',
+  styleUrls: ['./carrusel.component.scss']
 })
-export class InicioComponent implements OnInit {
-  public cards: any;
+export class CarruselComponent implements OnInit {
+  @Input() ide!:string;
   public ImgCarr:any;
+  @Input () identifier!:string;
   constructor() { 
     this.ImgCarr=[
       {url:'./assets/imagenes/Tipojeans1.jpeg',
@@ -21,6 +22,7 @@ export class InicioComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.identifier='#'+this.ide;
   }
 
 }
