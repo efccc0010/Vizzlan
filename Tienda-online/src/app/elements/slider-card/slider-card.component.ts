@@ -25,31 +25,31 @@ export class SliderCardComponent implements OnInit {
       {
         nombre:'Jeans 3',
         rutaImg:'http://cdn.shopify.com/s/files/1/0054/0046/1346/products/Pantalonjeanrasgado-celeste-frontal-cayla_1_1200x1200.jpg',
-        precio:20,
+        precio:60,
         indice:3,  
       },
       {
         nombre:'Jeans 4',
         rutaImg:'https://home.ripley.com.pe/Attachment/WOP_5/2015278490611/2015278490611_2.jpg',
-        precio:15,
+        precio:65,
         indice:4,
       },
       {
         nombre:'Jeans 5',
         rutaImg:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWg6cdgGhWaTmD4wy12DDKCVNoT1aUoidVEZDwgm-Cl6O_K5cLQr0X7uOIqHmtmwbLJcw&usqp=CAU',
-        precio:12,
+        precio:72,
         indice:5,
       },
       {
         nombre:'Jeans 6',
         rutaImg:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM95GLfiJcvmg6lFhBBc9wU1-zuw2hY4DiTjN2UX2RrgviZcwer5EzEYjYNOACtN2pkzA&usqp=CAU',
-        precio:40,
+        precio:80,
         indice:6,
       },
       {
         nombre:'Jeans 7',
         rutaImg:'https://home.ripley.com.pe/Attachment/WOP_5/2015259112303/2015259112303-2.jpg',
-        precio:56,
+        precio:96,
         indice:7,
       },
       {

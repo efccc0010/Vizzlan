@@ -5,7 +5,7 @@
                 <div class="row mx-5">
                   <ng-container *ngFor="let producto of Productos; index as i">
                     <div class="col-3" *ngIf="i<4">
-                      <app-card [urlImage]='producto.rutaImg'></app-card>
+                      <app-card [urlImage]='producto.rutaImg' [Precio]='producto.precio' [Titulo]='producto.nombre'></app-card>
                     </div>
                   </ng-container>
                   </div>
@@ -16,7 +16,7 @@
           <div class="row mx-5">
               <ng-container *ngFor="let producto of Productos; index as i">
                 <div class="col-3" *ngIf="3<i && i<8">
-                  <app-card [urlImage]='producto.rutaImg'></app-card>
+                  <app-card [urlImage]='producto.rutaImg' [Precio]='producto.precio' [Titulo]='producto.nombre'></app-card>
                 </div>
               </ng-container>
             </div>

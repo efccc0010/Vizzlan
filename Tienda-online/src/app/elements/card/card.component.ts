@@ -7,6 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
   @Input()  urlImage: any;
+  @Input()  Precio:any;
+  @Input()  Titulo:any;
   constructor() { }
 
   ngOnInit(): void {
