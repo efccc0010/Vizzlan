@@ -21,10 +21,8 @@
   </div>
   
   <div class="row">
-    <!-- filter mobile -->
-  
-      <!-- end filter mobile -->
-  
+   
+     <!-- filter mobile -->
       <div class="col-lg-3 col-md-4">
           <div id="side-filters">
               <h4>Filtrar por:</h4>
@@ -122,8 +120,8 @@
       
   
       </div>
-  
-  
+      <!------------------------------------------>
+      
       <div class="col-lg-9 col-md-8">
           <div class="row justify-content-between mb-4">
               
@@ -149,96 +147,19 @@
                   
                  
               </div>
-          <div class="row mx-3" >
-              <div class="card mx-4 mb-4" style="width: 18rem;">
-                  <img src="..." class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <!-- Button trigger modal -->
-                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Añadir
-                      </button>
+              <!--LISTA DE PRODUCTOS--------------->
+              <ng-container *ngFor="let itemF of Productos; let iF=index">
+                <div class="row mx-3" *ngIf="iF<longitud">
+                  <ng-container *ngFor="let itemP of Productos; let iProd=index">
+                    <div class="col-6" *ngIf="iProd>=2*(iF) && iProd<2*(iF+1)">
+                      <app-card [Precio]="itemP.precio" [urlImage]="itemP.rutaImg">
 
-                      <!-- Modal -->
-                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel">Añadido</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                              Producto añadido a carrito de compra
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                  </div>
+                      </app-card>
+                    </div>
+                  </ng-container>
+                  
                 </div>
-                <div class="card mx-4 mb-4" style="width: 18rem;">
-                  <img src="..." class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <!-- Button trigger modal -->
-                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Añadir
-                      </button>
-
-                      <!-- Modal -->
-                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel">Añadido</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                              Producto añadido a carrito de compra
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                  </div>
-                </div>
-          </div>
-          <div class="row mx-3" >
-              <div class="card mx-4 mb-4" style="width: 18rem;">
-                  <img src="..." class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <a href="#" class="btn btn-primary">Añadir</a>
-                  </div>
-                </div>
-                <div class="card mx-4 mb-4" style="width: 18rem;">
-                  <img src="..." class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <a href="#" class="btn btn-primary">Añadir</a>
-                  </div>
-                </div>
-          </div>
-          <div class="row mx-3" >
-              <div class="card mx-4 mb-4" style="width: 18rem;">
-                  <img src="..." class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <a href="#" class="btn btn-primary">Añadir</a>
-                  </div>
-                </div>
-                <div class="card mx-4 mb-4" style="width: 18rem;">
-                  <img src="..." class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <a href="#" class="btn btn-primary">Añadir</a>
-                  </div>
-                </div>
-          </div>
+              </ng-container>
           
       </div>
               
