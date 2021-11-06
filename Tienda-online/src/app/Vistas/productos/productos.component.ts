@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ProductosComponent implements OnInit {
   @Input() Productos: any;
   public longitud:any;
+  public Menu:any;
   constructor() { 
 
     this.Productos=[
@@ -59,7 +60,20 @@ export class ProductosComponent implements OnInit {
         indice:8,
       }
       ];
-      this.longitud=this.Productos.length
+      this.longitud=this.Productos.length;
+      //----------------Menu de progreso----------------------//
+      this.Menu=[
+        {nombre:'Home',
+        clase:'breadcrumb-item',
+        ruta:''},
+        {nombre:'Productos',
+        clase:'breadcrumb-item',
+        ruta:''},
+        {nombre:'Jeans',
+        clase:'breadcrumb-item active',
+        ruta:''}
+      ]
+      //------------------------------------------------------//
   }
 
   ngOnInit(): void {

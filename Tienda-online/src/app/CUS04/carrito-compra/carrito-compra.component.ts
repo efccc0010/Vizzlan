@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarritoCompraComponent implements OnInit {
   public ProductosCarrito:any;
+  public Menu:any;
   constructor() {
     this.ProductosCarrito=[
       {codigo:'P0001',
@@ -30,6 +31,16 @@ export class CarritoCompraComponent implements OnInit {
       cantidad:1,
       subtotal:null},
     ]
+    //----------------Menu de progreso----------------------//
+    this.Menu=[
+      {nombre:'Home',
+      clase:'breadcrumb-item',
+      ruta:''},
+      {nombre:'Carrito de compra',
+      clase:'breadcrumb-item active',
+      ruta:'Carrito-compra'}
+    ]
+    //-----------------------------------------------------//
    }
 
   ngOnInit(): void {

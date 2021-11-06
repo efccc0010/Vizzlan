@@ -1,0 +1,10 @@
+<section class="col-12 d-none d-md-block">
+    <nav aria-label="breadcrumb" style="background-color: #f5f5f5">
+      <ol class="breadcrumb py-3 px-2">
+          <ng-container *ngFor="let item of tituloMenu">
+            <li *ngIf="item.clase=='breadcrumb-item'" [class]="item.clase"><a [routerLink]="item.ruta">{{item.nombre}}</a></li>
+            <li *ngIf="item.clase=='breadcrumb-item active'" [class]="item.clase" aria-current="page">{{item.nombre}}</li>
+          </ng-container>
+      </ol>
+    </nav>
+</section>
