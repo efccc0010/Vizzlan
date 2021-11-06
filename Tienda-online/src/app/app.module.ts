@@ -17,6 +17,7 @@ import { PedidoEspecialComponent } from './CUS15/pedido-especial/pedido-especial
 import { CarruselComponent } from './elements/carrusel/carrusel.component';
 import { ListaProductosComponent } from './CUS04/lista-productos/lista-productos.component';
 import { BreadcrumbComponent } from './elements/breadcrumb/breadcrumb.component';
+import { DetalleProductoComponent } from './Vistas/detalle-producto/detalle-producto.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { BreadcrumbComponent } from './elements/breadcrumb/breadcrumb.component'
     PedidoEspecialComponent,
     CarruselComponent,
     ListaProductosComponent,
-    BreadcrumbComponent
+    BreadcrumbComponent,
+    DetalleProductoComponent
   ],
   imports: [
     BrowserModule,
