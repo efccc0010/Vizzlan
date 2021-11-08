@@ -18,6 +18,7 @@ import { CarruselComponent } from './elements/carrusel/carrusel.component';
 import { ListaProductosComponent } from './CUS04/lista-productos/lista-productos.component';
 import { BreadcrumbComponent } from './elements/breadcrumb/breadcrumb.component';
 import { DetalleProductoComponent } from './Vistas/detalle-producto/detalle-producto.component';
+import { ListaDecoracionesPrincipalesComponent } from './CUS15/lista-decoraciones-principales/lista-decoraciones-principales.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { DetalleProductoComponent } from './Vistas/detalle-producto/detalle-prod
     CarruselComponent,
     ListaProductosComponent,
     BreadcrumbComponent,
-    DetalleProductoComponent
+    DetalleProductoComponent,
+    ListaDecoracionesPrincipalesComponent
   ],
   imports: [
     BrowserModule,
