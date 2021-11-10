@@ -1,5 +1,8 @@
-import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
+// import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+// import {NgbModule}
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +22,10 @@ import { ListaProductosComponent } from './CUS04/lista-productos/lista-productos
 import { BreadcrumbComponent } from './elements/breadcrumb/breadcrumb.component';
 import { DetalleProductoComponent } from './Vistas/detalle-producto/detalle-producto.component';
 import { ListaDecoracionesPrincipalesComponent } from './CUS15/lista-decoraciones-principales/lista-decoraciones-principales.component';
+import { CUS07Component } from './CUS07/CUS07.component';
+import { CUS06Component } from './CUS06/CUS06.component';
+import { ModulosExternosModule } from './modulos.externos';
+import { NO_ERRORS_SCHEMA } from '@angular/compiler/src/compiler';
 
 @NgModule({
   declarations: [
@@ -36,12 +43,23 @@ import { ListaDecoracionesPrincipalesComponent } from './CUS15/lista-decoracione
     ListaProductosComponent,
     BreadcrumbComponent,
     DetalleProductoComponent,
-    ListaDecoracionesPrincipalesComponent
-  ],
+    ListaDecoracionesPrincipalesComponent,
+    CUS07Component,
+    CUS06Component,
+
+   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserModule,
+    ModulosExternosModule,
+    NgModule,
+    // <--- Add this line
+    // RouterModule.forChild(mainRoutes),
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA,
+    NO_ERRORS_SCHEMA
   ],
   providers: [],
   bootstrap: [AppComponent]
