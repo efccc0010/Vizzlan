@@ -1,3 +1,5 @@
+import { RegistroEnvioComponent } from './CUS06/RegistroEnvio/RegistroEnvio.component';
+import { FormEnvioComponent } from './CUS06/FormEnvio/FormEnvio.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -36,7 +38,9 @@ import { ListaDecoracionesPrincipalesComponent } from './CUS15/lista-decoracione
     ListaProductosComponent,
     BreadcrumbComponent,
     DetalleProductoComponent,
-    ListaDecoracionesPrincipalesComponent
+    ListaDecoracionesPrincipalesComponent,
+    FormEnvioComponent,
+    RegistroEnvioComponent
   ],
   imports: [
     BrowserModule,

@@ -9,7 +9,7 @@ export class InicioComponent implements OnInit {
   public cards: any;
   public ImgCarr:any;
   public Productos:any;
-  constructor() { 
+  constructor() {
     this.ImgCarr=[
       {url:'./assets/imagenes/Tipojeans1.jpeg',
       clase:'carousel-item active'},
