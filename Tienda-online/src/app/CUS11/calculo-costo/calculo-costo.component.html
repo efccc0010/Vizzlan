@@ -1,13 +1,81 @@
-<div class="card text-center">
-    <div class="card-header">
-      Featured
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">VIZZLAN</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      </ul>
+      <a style="color:black">Administrador<i class="bi bi-person-bounding-box"></i></a>
     </div>
-    <div class="card-body">
-      <h5 class="card-title">Special title treatment</h5>
-      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-    <div class="card-footer text-muted">
-      2 days ago
-    </div>
+  </div>
+</nav>
+
+<div class="btn-group" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-primary">Pedidos Especiales</button>
+  <button type="button" class="btn btn-primary">Pedidos de Producción</button>
+  <button type="button" class="btn btn-primary">Modificar Productos</button>
 </div>
+
+<p class="fw-bold" >Pedido Especial</p>
+<div class="container" class="col-6">
+<div class="row">
+  <div class="col-2">
+  <p class="fw-bold" >Bold text.</p>
+  <input type="text" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+</div>
+<div class="col-2">
+  <p class="fw-bold" >Bold text.</p>
+  <input type="text" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+  <i class="bi bi-calendar3"></i>
+</div>
+<div class="col-2">
+  <p class="fw-bold" >Bold text.</p>
+  <input type="text" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+</div>
+
+</div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Descripcion</th>
+        <th scope="col">Preview</th>
+        <th scope="col">Cantidad</th>
+        <th scope="col">Precio Unitario</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Piedras especiales</th>
+        <td><a href="#" class="link-primary">Imagen</a></td>
+        <td><input type="number" style="width: 50%;" min="1"></td>
+        <td>S/ 50</td>
+        <td><i class="bi bi-trash"></i></td>
+      </tr>
+      <tr>
+        <th scope="row">Lavado de pantalon</th>
+        <td><a href="#" class="link-primary">Imagen</a></td>
+        <td><input type="number" style="width: 50%;" min="1"></td>
+        <td>S/ 20</td>
+        <td><i class="bi bi-trash"></i></td>
+      </tr>
+      <tr>
+        <th scope="row">Pantalon jean clasico</th>
+        <td><a href="#" class="link-primary">Imagen</a></td>
+        <td><input type="number" style="width: 50%;" min="1"></td>
+        <td>S/ 18</td>
+        <td><i class="bi bi-trash"></i></td>
+      </tr>
+    </tbody>
+  </table>  
+
+  <p class="fw-bold">Descuento      S/ 8</p>
+  <p class="fw-bold">Subtotal       S/ 80</p>
+  <p class="fw-bold">IGV            S/ 14.4</p>
+  <p class="fw-bold">Total a pagar  S/ 91.2</p>
+  
+  <button type="button" class="btn btn-primary">Volver</button>
+  <button type="button" class="btn btn-primary">Confirmar</button>
+</div>  
+
