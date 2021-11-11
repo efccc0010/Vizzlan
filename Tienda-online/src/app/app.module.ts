@@ -21,6 +21,7 @@ import { ListaProductosComponent } from './CUS04/lista-productos/lista-productos
 import { BreadcrumbComponent } from './elements/breadcrumb/breadcrumb.component';
 import { DetalleProductoComponent } from './Vistas/detalle-producto/detalle-producto.component';
 import { ListaDecoracionesPrincipalesComponent } from './CUS15/lista-decoraciones-principales/lista-decoraciones-principales.component';
+import { CalculoCostoComponent } from './CUS11/calculo-costo/calculo-costo.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,9 @@ import { ListaDecoracionesPrincipalesComponent } from './CUS15/lista-decoracione
     DetalleProductoComponent,
     ListaDecoracionesPrincipalesComponent,
     FormEnvioComponent,
-    RegistroEnvioComponent
+    RegistroEnvioComponent,
+    CalculoCostoComponent,
+
   ],
   imports: [
     BrowserModule,
