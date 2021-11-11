@@ -1,3 +1,5 @@
+import { PagarPedidoEstandarComponent } from './CUS07/PagarPedidoEstandar/PagarPedidoEstandar.component';
+import { FormPagoComponent } from './CUS07/formPago/formPago.component';
 import { RegistroEnvioComponent } from './CUS06/RegistroEnvio/RegistroEnvio.component';
 import { FormEnvioComponent } from './CUS06/FormEnvio/FormEnvio.component';
 import { NgModule } from '@angular/core';
@@ -43,6 +45,8 @@ import { CalculoCostoComponent } from './CUS11/calculo-costo/calculo-costo.compo
     FormEnvioComponent,
     RegistroEnvioComponent,
     CalculoCostoComponent,
+    FormPagoComponent,
+    PagarPedidoEstandarComponent
 
   ],
   imports: [

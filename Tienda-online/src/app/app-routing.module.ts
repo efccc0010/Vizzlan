@@ -1,3 +1,4 @@
+import { PagarPedidoEstandarComponent } from './CUS07/PagarPedidoEstandar/PagarPedidoEstandar.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { IngresarComponent } from './CUS01/ingresar/ingresar.component';
@@ -17,7 +18,8 @@ const routes: Routes = [
   {path:'Pedido-especial',component:PedidoEspecialComponent},
   {path:'detalle-producto',component:DetalleProductoComponent},
   {path:'RegistroEnvio',component:RegistroEnvioComponent},
-  {path:'Calculo-costo',component:CalculoCostoComponent}
+  {path:'Calculo-costo',component:CalculoCostoComponent},
+  {path:'PagarPedidoEstandar',component:PagarPedidoEstandarComponent}
 ];
 
 @NgModule({
