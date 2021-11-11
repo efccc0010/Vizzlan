@@ -1,3 +1,5 @@
+import { PagarPedidoEstandarComponent } from './CUS07/PagarPedidoEstandar/PagarPedidoEstandar.component';
+import { FormPagoComponent } from './CUS07/formPago/formPago.component';
 import { RegistroEnvioComponent } from './CUS06/RegistroEnvio/RegistroEnvio.component';
 import { FormEnvioComponent } from './CUS06/FormEnvio/FormEnvio.component';
 import { NgModule } from '@angular/core';
@@ -40,7 +42,9 @@ import { ListaDecoracionesPrincipalesComponent } from './CUS15/lista-decoracione
     DetalleProductoComponent,
     ListaDecoracionesPrincipalesComponent,
     FormEnvioComponent,
-    RegistroEnvioComponent
+    RegistroEnvioComponent,
+    FormPagoComponent,
+    PagarPedidoEstandarComponent
   ],
   imports: [
     BrowserModule,
