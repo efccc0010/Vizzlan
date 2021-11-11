@@ -1,0 +1,25 @@
+.credit-card-div  span { padding-top:10px; }
+.credit-card-div img { padding-top:30px; }
+.credit-card-div .small-font { font-size:9px; }
+.credit-card-div .pad-adjust { padding-top:10px; }
+
+.img-rounded{
+  width: 45px;
+  height: 60px;
+  margin:auto;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}

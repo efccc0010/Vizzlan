@@ -1,5 +1,6 @@
-import { RegistroEnvioComponent } from './CUS06/RegistroEnvio/RegistroEnvio.component';
-import { FormEnvioComponent } from './CUS06/FormEnvio/FormEnvio.component';
+import { PagoPedidoComponent } from './CUS07/PagoPedido/PagoPedido.component';
+// import { ProgressStepComponent } from './CUS07/Progress-Step/progress/progress-step/progress-step.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -21,7 +22,10 @@ import { ListaProductosComponent } from './CUS04/lista-productos/lista-productos
 import { BreadcrumbComponent } from './elements/breadcrumb/breadcrumb.component';
 import { DetalleProductoComponent } from './Vistas/detalle-producto/detalle-producto.component';
 import { ListaDecoracionesPrincipalesComponent } from './CUS15/lista-decoraciones-principales/lista-decoraciones-principales.component';
-
+import { FormEnvioComponent } from './CUS06/FormEnvio/FormEnvio.component';
+import { RegistroEnvioComponent } from './CUS06/RegistroEnvio/RegistroEnvio.component';
+// import { FormEnvioComponent } from './CUS06/FormEnvio/FormEnvio.component';
+// import { ProgressComponent } from './CUS07/Progress-Step/progress/progress.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,12 +44,14 @@ import { ListaDecoracionesPrincipalesComponent } from './CUS15/lista-decoracione
     DetalleProductoComponent,
     ListaDecoracionesPrincipalesComponent,
     FormEnvioComponent,
-    RegistroEnvioComponent
+    RegistroEnvioComponent,
+    PagoPedidoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
