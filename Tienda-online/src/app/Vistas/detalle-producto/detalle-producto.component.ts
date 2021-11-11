@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ServicioDetalleProductoService } from 'src/app/servicios/servicio-detalle-producto.service';
 
 @Component({
@@ -9,9 +9,13 @@ import { ServicioDetalleProductoService } from 'src/app/servicios/servicio-detal
 export class DetalleProductoComponent implements OnInit {
     public Menu:any;
     public PrecioAntes:number;
+    public RutaImg:any;
   constructor(public DatosProducto:ServicioDetalleProductoService ) {
     //----------------Precio antes--------------------------//
-    this.PrecioAntes=1.2*this.DatosProducto.precio
+    this.PrecioAntes=1.2*this.DatosProducto.precio;
+
+    //----------------Imagen--------------------------------//
+    this.RutaImg=this.DatosProducto.rutaImg;
     //----------------Menu de progreso----------------------//
     this.Menu=[
       {nombre:'Home',

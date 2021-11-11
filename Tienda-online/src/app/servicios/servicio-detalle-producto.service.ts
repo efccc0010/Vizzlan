@@ -7,5 +7,6 @@ export class ServicioDetalleProductoService {
       codigo:string='';
       nombre:string='';
       precio:number=0;
+      rutaImg:string='';
   constructor() { }
 }

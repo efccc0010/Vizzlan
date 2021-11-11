@@ -20,6 +20,7 @@ export class CardComponent implements OnInit {
   VerDetalle(producto:any){
     this.DatosProducto.nombre=producto.nombre;
     this.DatosProducto.precio=producto.precio;
+    this.DatosProducto.rutaImg=producto.rutaImg;
   }
 
 }
