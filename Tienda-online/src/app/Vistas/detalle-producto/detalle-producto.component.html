@@ -22,7 +22,7 @@
                 </div>
                 <div class="card-body">
                   <blockquote class="blockquote mb-0">
-                    <h5>A well-known quote, contained in a blockquote element.</h5>
+                    <h5>{{DatosProducto.nombre}}</h5>
                     <div class="border-bottom my-3">
                         <h6>
                             Lorem ipsum dolor sit
@@ -32,9 +32,9 @@
                         </p>
                     </div>
                     <div class="border-bottom my-3">
-                        <p>PRECIO ANTES:</p>
+                        <p>PRECIO ANTES: S/.{{PrecioAntes}}</p>
                         
-                        <p>PRECIO ONLINE:</p>
+                        <p>PRECIO ONLINE: S/.{{DatosProducto.precio}}</p>
                     </div>
                     <div >
                         <h6>Colores</h6>
@@ -58,7 +58,7 @@
                         
                     </div>
                     <div class="d-grid">
-                        <button type="submit" class="btn btn-secondary btn-lg"> <i class="bi bi-cart-plus-fill"></i> Añadir</button>
+                        <button type="submit" class="btn btn-secondary btn-lg" routerLink="/Carrito-compra"> <i class="bi bi-cart-plus-fill"></i> Añadir</button>
                       </div> 
                   </blockquote>
                 </div>
