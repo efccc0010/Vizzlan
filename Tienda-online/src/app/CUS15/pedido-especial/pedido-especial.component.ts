@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PedidoEspecialComponent implements OnInit {
   public Menu!:any;
+  public ListaProductosPedidoEspecial: any;
   constructor() {
     //----------------Menu de progreso----------------------//
       this.Menu=[
@@ -18,6 +19,29 @@ export class PedidoEspecialComponent implements OnInit {
         ruta:'Pedido-Especial'}
       ]
       //---------------------------------------------------//
+      this.ListaProductosPedidoEspecial=[
+        {
+          ImagenProductoPedidoEspecial:'Imagen01',
+          Cantidad:'100',
+          DecoracionAñadida:'DECORACION01',
+          PrecioDecoracion:'10.00',
+          MontoTotalDecoracion:null,
+        },
+        {
+          ImagenProductoPedidoEspecial:'Imagen01',
+          Cantidad:'100',
+          DecoracionAñadida:'DECORACION01',
+          PrecioDecoracion:'10.00',
+          MontoTotalDecoracion:null,
+        },
+        {
+          ImagenProductoPedidoEspecial:'Imagen01',
+          Cantidad:'100',
+          DecoracionAñadida:'DECORACION01',
+          PrecioDecoracion:'10.00',
+          MontoTotalDecoracion:null,
+        }
+      ]
    }
 
   ngOnInit(): void {

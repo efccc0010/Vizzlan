@@ -9,6 +9,7 @@ import { PedidoEspecialComponent } from './CUS15/pedido-especial/pedido-especial
 import { DetalleProductoComponent } from './Vistas/detalle-producto/detalle-producto.component';
 import { InicioComponent } from './Vistas/inicio/inicio.component';
 import { ProductosComponent } from './Vistas/productos/productos.component';
+import { VisualizarDecoracionesComponent } from './CUS15/visualizar-decoraciones/visualizar-decoraciones.component';
 
 const routes: Routes = [
   {path:'', component:InicioComponent},
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path:'detalle-producto',component:DetalleProductoComponent},
   {path:'RegistroEnvio',component:RegistroEnvioComponent},
   {path:'Calculo-costo',component:CalculoCostoComponent},
-  {path:'PagarPedidoEstandar',component:PagarPedidoEstandarComponent}
+  {path:'PagarPedidoEstandar',component:PagarPedidoEstandarComponent},
+  {path:'Visualizar-decoraciones',component:VisualizarDecoracionesComponent}
 ];
 
 @NgModule({

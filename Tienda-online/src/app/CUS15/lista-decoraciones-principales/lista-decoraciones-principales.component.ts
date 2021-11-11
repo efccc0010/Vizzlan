@@ -11,18 +11,18 @@ export class ListaDecoracionesPrincipalesComponent implements OnInit {
       this.ListaProductos=[
         {
           imagen:'./assets/imagenes/Decoraciones/decoracion1.jpg',
-          nombre:'D01',
-          precio:10
+          nombre:'DECORACIÓN01',
+          precio:10.00
         },
         {
           imagen:'./assets/imagenes/Decoraciones/decoracion3.jpg',
-          nombre:'D02',
-          precio:7
+          nombre:'DECORACIÓN02',
+          precio:7.00
         },
         {
           imagen:'./assets/imagenes/Decoraciones/decoracion2.png',
-          nombre:'D03',
-          precio:8
+          nombre:'DECORACIÓN03',
+          precio:8.00
         },
       ]
    }
