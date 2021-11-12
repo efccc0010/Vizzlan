@@ -43,12 +43,10 @@
                     </button>
                     <div class="collapse show" id="material-collapse">
                       <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                        <li><a href="/Visualizar-decoraciones" class="link-dark rounded">Denim de algodón serge</a></li>
-                        <li><a href="/Visualizar-decoraciones" class="link-dark rounded">Denim crud</a></li>
-                        <li><a href="/Visualizar-decoraciones" class="link-dark rounded">Denim de orillo</a></li>
-                        <li><a href="/Visualizar-decoraciones" class="link-dark rounded">Denim elástico</a></li>
-                        <li><a href="/Visualizar-decoraciones" class="link-dark rounded">Denim de poliéster</a></li>
-                        <li><a href="/Visualizar-decoraciones" class="link-dark rounded">Denim orgánico</a></li>
+                        <li *ngFor="let material of Materiales">
+                          <a href="/Visualizar-decoraciones" class="link-dark rounded">
+                          {{material}}</a>
+                        </li>
                       </ul>
                     </div>
                     </li>
@@ -59,11 +57,10 @@
                     </button>
                     <div class="collapse show" id="color-collapse">
                       <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                        <li><a href="/Visualizar-decoraciones" class="link-dark rounded">Negro</a></li>
-                        <li><a href="/Visualizar-decoraciones" class="link-dark rounded">Azul</a></li>
-                        <li><a href="/Visualizar-decoraciones" class="link-dark rounded">Plomo</a></li>
-                        <li><a href="/Visualizar-decoraciones" class="link-dark rounded">Blanco</a></li>
-                        <li><a href="/Visualizar-decoraciones" class="link-dark rounded">Dorado</a></li>
+                        <li *ngFor="let color of Colors">
+                          <a href="/Visualizar-decoraciones" class="link-dark rounded">
+                            {{color}}</a>
+                        </li>
                       </ul>
                     </div>
                     </li>
@@ -74,13 +71,10 @@
                     </button>
                     <div class="collapse show" id="posicion-collapse">
                       <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                        <li><a href="/Visualizar-decoraciones" class="link-dark rounded">Scallop</a></li>
-                        <li><a href="/Visualizar-decoraciones" class="link-dark rounded">Presillas</a></li>
-                        <li><a href="/Visualizar-decoraciones" class="link-dark rounded">Yoke</a></li>
-                        <li><a href="/Visualizar-decoraciones" class="link-dark rounded">Dobladillo</a></li>
-                        <li><a href="/Visualizar-decoraciones" class="link-dark rounded">Bolsas de parche</a></li>
-                        <li><a href="/Visualizar-decoraciones" class="link-dark rounded">Cuerpo de bota</a></li>
-                        <li><a href="/Visualizar-decoraciones" class="link-dark rounded">Bolsa vaquera</a></li>
+                        <li *ngFor="let posicion of Posiciones">
+                          <a href="/Visualizar-decoraciones" class="link-dark rounded">
+                            {{posicion}}</a>
+                        </li>
                       </ul>
                     </div>
                     </li>
@@ -91,13 +85,10 @@
                     </button>
                     <div class="collapse show" id="modelo-collapse">
                       <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                        <li><a href="/Visualizar-decoraciones" class="link-dark rounded">Reta</a></li>
-                        <li><a href="/Visualizar-decoraciones" class="link-dark rounded">Skinny</a></li>
-                        <li><a href="/Visualizar-decoraciones" class="link-dark rounded">Jenning</a></li>
-                        <li><a href="/Visualizar-decoraciones" class="link-dark rounded">Capri</a></li>
-                        <li><a href="/Visualizar-decoraciones" class="link-dark rounded">Boot Cut</a></li>
-                        <li><a href="/Visualizar-decoraciones" class="link-dark rounded">Flare</a></li>
-                        <li><a href="/Visualizar-decoraciones" class="link-dark rounded">Pantalona</a></li>
+                        <li *ngFor="let modeloJean of ModelosJeans">
+                          <a href="/Visualizar-decoraciones" class="link-dark rounded">
+                            {{modeloJean}}
+                          </a></li>
                       </ul>
                     </div>
                     </li>
@@ -108,26 +99,26 @@
                     </button>
                     <div class="collapse show" id="precio-collapse">
                         <div class="accordion-body">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
+                            <div class="form-check" *ngFor="let rango of RangoPrecios">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                              <label class="form-check-label" for="flexCheckDefault">
                                   0-15
-                                </label>
-                              </div>
+                              </label>
+                            </div>
                               <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                                 <label class="form-check-label" for="flexCheckChecked">
                                   16-30
                                 </label>
                               </div>
                               <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                                 <label class="form-check-label" for="flexCheckChecked">
                                   31-45
                                 </label>
                               </div>
                               <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                                 <label class="form-check-label" for="flexCheckChecked">
                                   46-60
                                 </label>
