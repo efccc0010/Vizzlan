@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServicioDetalleProductoService } from 'src/app/servicios/servicio-detalle-producto.service';
 
 @Component({
   selector: 'app-carrito-compra',
@@ -8,29 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class CarritoCompraComponent implements OnInit {
   public ProductosCarrito:any;
   public Menu:any;
-  constructor() {
-    this.ProductosCarrito=[
-      {codigo:'P0001',
-      nombre:'P01',
-      precio:50,
-      cantidad:1,
-      subtotal:null},
-      {codigo:'P0002',
-      nombre:'P02',
-      precio:70,
-      cantidad:1,
-      subtotal:null},
-      {codigo:'P0003',
-      nombre:'P03',
-      precio:60,
-      cantidad:1,
-      subtotal:null},
-      {codigo:'P0004',
-      nombre:'P04',
-      precio:80,
-      cantidad:1,
-      subtotal:null},
-    ]
+  constructor(public armarCarrito:ServicioDetalleProductoService ) {
+    this.ProductosCarrito=this.armarCarrito.Productos;
     //----------------Menu de progreso----------------------//
     this.Menu=[
       {nombre:'Home',
