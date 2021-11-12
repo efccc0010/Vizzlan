@@ -33,6 +33,8 @@ import { VisualizarEstadoComponent } from './CUS13/visualizar-estado/visualizar-
 import { DisenoPersonalizadoComponent } from './CUS18/diseno-personalizado/diseno-personalizado.component';
 import { FormDisenoComponent } from './CUS18/form-diseno/form-diseno.component';
 import { PedidoProduccionPlantillaComponent } from './CUS17/pedido-produccion-plantilla/pedido-produccion-plantilla.component';
+import { VisualizarEstadoProduccionComponent } from './CUS13/visualizar-estado-produccion/visualizar-estado-produccion.component';
+import { VisualizarEstadoEspecialComponent } from './CUS13/visualizar-estado-especial/visualizar-estado-especial.component';
 
 
 @NgModule({
@@ -65,8 +67,9 @@ import { PedidoProduccionPlantillaComponent } from './CUS17/pedido-produccion-pl
     VisualizarEstadoComponent,
     DisenoPersonalizadoComponent,
     FormDisenoComponent,
-    PedidoProduccionPlantillaComponent
-
+    PedidoProduccionPlantillaComponent,
+    VisualizarEstadoProduccionComponent,
+    VisualizarEstadoEspecialComponent
   ],
   imports: [
     BrowserModule,

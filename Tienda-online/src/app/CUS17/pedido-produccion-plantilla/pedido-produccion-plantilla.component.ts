@@ -49,14 +49,14 @@ export class PedidoProduccionPlantillaComponent implements OnInit {
           cantidad:num,
           subtotal:num*p}
         )
-        
+        /*
         for (let index = 0; index < this.DatosProducto.Productos.length; index++) {
           this.MontoTotal = 
           this.MontoTotal+this.DatosProducto.Productos[index].precio*this.DatosProducto.Productos[index].cantidad;
           this.CantidadTotal=this.CantidadTotal+this.DatosProducto.Productos[index].cantidad;
         }
         this.DatosProducto.total=this.MontoTotal;
-        this.DatosProducto.c_total=this.CantidadTotal;
+        this.DatosProducto.c_total=this.CantidadTotal;*/
     }
   
 

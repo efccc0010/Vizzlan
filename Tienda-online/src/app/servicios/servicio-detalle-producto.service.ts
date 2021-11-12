@@ -20,5 +20,9 @@ export class ServicioDetalleProductoService {
       public total:number=0;
       public c_total:number=0;
   //----------------------------------------//
+  //------------Info carrito navbar---------//
+      public cantidadProductos:number=0;
+      public Monto:number=0;
+  //----------------------------------------//
   constructor() { }
 }

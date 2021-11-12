@@ -1,0 +1,84 @@
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="">VIZZLAN</a>
+      <form class="d-flex">
+        <a  class="nav-link" style="color:white"> <span>Administrador<i class="bi bi-person-bounding-box"></i> </span> </a>
+      </form>
+    </div>
+  </nav>
+  
+    <div class="container">
+      <div class="row justify-content-center"> 
+        <div class="col-12">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-primary">Pedidos Especiales</button>
+            <button type="button" class="btn btn-primary">Pedidos de Producción</button>
+            <button type="button" class="btn btn-primary">Modificar Producto</button>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-10 offset-2 my-5">
+        <h3 class="fw-bold" >Pedidos Especiales</h3>
+        <div class="container" class="col-10">
+        <div class="row">
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Codigo</th>
+              <th scope="col">Fecha</th>
+              <th scope="col">Estado de Entrega</th>
+              <th scope="col">Administrador</th>
+              <th scope="col">Seleccion</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">AAA01</th>
+              <th><input type="date" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock"></th>
+              <th scope="row">Entregado</th>
+              <th>AD0001</th>
+              <th>
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                </label>
+              </div>
+              </th>
+            </tr>
+            <tr>
+              <th scope="row">AAA02</th>
+              <th><input type="date" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock"></th>
+              <th scope="row">Entregado</th>
+              <th>AD0001</th>
+              <th>
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                </label>
+              </div>
+              </th>
+            </tr>
+            <tr>
+              <th scope="row">AAA03</th>
+              <th><input type="date" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock"></th>
+              <th scope="row">Entregado</th>
+              <th>AD0002</th>
+              <th>
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                </label>
+              </div>
+              </th>
+            </tr>
+          </tbody>
+        </table> 
+      
+        <div class="my-4 px-2">
+          <button type="button" class="btn btn-primary ms-2" >Actualizar Estado de Pedido</button>
+        </div>
+        </div>  
+      </div>
+    </div>

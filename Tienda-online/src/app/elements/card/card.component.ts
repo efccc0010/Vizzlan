@@ -23,6 +23,7 @@ export class CardComponent implements OnInit {
     this.DatosProducto.nombre=producto.nombre;
     this.DatosProducto.precio=producto.precio;
     this.DatosProducto.rutaImg=producto.rutaImg;
+    
   }
 
 }

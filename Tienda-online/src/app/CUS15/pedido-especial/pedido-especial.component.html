@@ -8,6 +8,69 @@
         </app-breadcrumb>
     </div>
 </div>
+<div class="modal fade" id="ReservaExitosa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">RESERVA EXITOSA</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">PEDIDO ESPECIAL</h5>
+                    </div>
+                    <p class="mb-1">CÓDIGO: 12345677</p>
+                    <small>CUENTA BANCARIA: 1234567891234567</small>
+                </a>
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <th scope="row" >NÚMERO DE PRODUCTOS</th>
+                        <td class="text-end">100</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" >NÚMERO DE DECORACIONES</th>
+                        <td class="text-end">1</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" >VALOR DEL PEDIDO</td>
+                        <td class="text-end">S/ 8990.00</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">DESCUENTO</td>
+                        <td class="text-end">S/ 0.00</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">SUBTOTAL DECORACIÓN</td>
+                        <td class="text-end">S/ 820.00</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">SUBTOTAL PRODUCTO</td>
+                        <td class="text-end">S/ 6551.80</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">IGV (18%) </td>
+                        <td class="text-end">S/ 1618.20</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">TOTAL A PAGAR</th>
+                        <td class="text-end">S/ 8990.00</td>
+                    </tr>
+                    </tbody>
+                </table>
+              </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary" routerLink="/" data-bs-dismiss="modal">CONFIRMAR</button>
+            <div class="col-xs-4" class="text-center mx-2 my-2">
+                <button type="button" class="btn btn-secondary" routerLink="/Pedido-especial" data-bs-dismiss="modal">VOLVER</button>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
 <div class="container">    
     <div class="row">
         <div class="col-6">
@@ -114,7 +177,10 @@
             </table>
             <div class="row" class="row justify-content-center">
                 <div class="col-3">
-                    <button type="button" class="btn btn-primary">CONFIRMAR</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ReservaExitosa">RESERVAR</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" class="btn btn-primary" routerLink="/PagarPedidoEstandar">CONFIRMAR</button>
                 </div>
                 <div class="col-3">
                     <button type="button" class="btn btn-secondary">CANCELAR</button>
