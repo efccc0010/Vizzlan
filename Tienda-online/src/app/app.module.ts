@@ -23,6 +23,17 @@ import { ListaProductosComponent } from './CUS04/lista-productos/lista-productos
 import { BreadcrumbComponent } from './elements/breadcrumb/breadcrumb.component';
 import { DetalleProductoComponent } from './Vistas/detalle-producto/detalle-producto.component';
 import { ListaDecoracionesPrincipalesComponent } from './CUS15/lista-decoraciones-principales/lista-decoraciones-principales.component';
+import { CalculoCostoComponent } from './CUS11/calculo-costo/calculo-costo.component';
+import { VisualizarDecoracionesComponent } from './CUS15/visualizar-decoraciones/visualizar-decoraciones.component';
+import { PedidoProduccionComponent } from './CUS17/pedido-produccion/pedido-produccion.component';
+import { FooterComponent } from './elements/footer/footer.component';
+import { SubirImagenComponent } from './CUS18/subir-imagen/subir-imagen.component';
+import { ModificarPedidoComponent } from './CUS12/modificar-pedido/modificar-pedido.component';
+import { VisualizarEstadoComponent } from './CUS13/visualizar-estado/visualizar-estado.component';
+import { DisenoPersonalizadoComponent } from './CUS18/diseno-personalizado/diseno-personalizado.component';
+import { FormDisenoComponent } from './CUS18/form-diseno/form-diseno.component';
+import { PedidoProduccionPlantillaComponent } from './CUS17/pedido-produccion-plantilla/pedido-produccion-plantilla.component';
+
 
 @NgModule({
   declarations: [
@@ -43,13 +54,23 @@ import { ListaDecoracionesPrincipalesComponent } from './CUS15/lista-decoracione
     ListaDecoracionesPrincipalesComponent,
     FormEnvioComponent,
     RegistroEnvioComponent,
+    CalculoCostoComponent,
     FormPagoComponent,
-    PagarPedidoEstandarComponent
+    PagarPedidoEstandarComponent,
+    VisualizarDecoracionesComponent,
+    PedidoProduccionComponent,
+    FooterComponent,
+    SubirImagenComponent,
+    ModificarPedidoComponent,
+    VisualizarEstadoComponent,
+    DisenoPersonalizadoComponent,
+    FormDisenoComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

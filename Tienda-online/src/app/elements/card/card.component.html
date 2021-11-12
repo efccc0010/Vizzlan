@@ -1,15 +1,14 @@
-<div class="card my-2" style="width: 18rem;">
-    <img class="card-img-top" [src]="urlImage" alt="Card image cap">
+<div class="card my-2" style="width: 14rem;">
+    <img class="card-img-top img-fluid" [src]="urlImage" alt="Card image cap">
     <div class="card-body">
       <div class="row justify-content-center align-items-center text-center my-2">
         <h3 class="card-text" *ngIf="Precio!=null">${{Precio}}</h3>
-        <h4 class="card-title ">{{Titulo}}</h4>
-        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+        <h6 class="card-title">{{Codigo}} : {{Titulo}}</h6>
       </div>
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="d-grid">
-            <button type="submit" class="btn btn-secondary"  *ngIf="Precio!=null"> <i class="bi bi-cart-plus-fill"></i> Añadir</button>
+            <button type="submit" class="btn btn-secondary" routerLink="/detalle-producto" (click)="VerDetalle(Producto)" *ngIf="Precio!=null"> <i class="bi bi-search"></i> Ver </button>
           </div> 
         </div>
         

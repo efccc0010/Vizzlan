@@ -1,13 +1,70 @@
-<!-- barra de navegacion-->
-<app-nav-bar></app-nav-bar>
+<body class="bg-light">
+      <!-- barra de navegacion-->
+      <app-nav-bar></app-nav-bar>
 
-<!-- carrusel-->
-<app-carrusel [ide]="'carrusel0'" [ImgCarr]="ImgCarr"></app-carrusel>
-<br>
-<!-- slider de cards-->
-<app-slider-card [ide]="'carrusel1'">
+      <!-- carrusel-->
+      <app-carrusel [ide]="'carrusel0'" [ImgCarr]="ImgCarr"></app-carrusel>
+            <br>
+              <div class="divider border-top"></div>
+            <br>
 
-</app-slider-card>
-<!--------------------------------------------------------->
+ 
+    <div class="container" style="max-width: 1000px;">
+       <!-- slider de cards-->
+    <app-slider-card [ide]="'carrusel1'">
 
+    </app-slider-card>
+    <!--------------------------------------------------------->
+          <br>
+            <div class="divider border-top"></div>
+          <br>
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">COLECCIÓN WELCOME SPRING PRIMAVERA 2021 <span class="text-muted">...It’ll blow your mind.</span></h2>
+          <p class="lead">Te invitamos a conocer esta hermosa colección que trae piezas que no solo están diseñadas pensando en las tendencias actuales, sino en qué estás puedan perdurar en el tiempo y sernos útiles en diferentes temporadas .</p>
+        </div>
+        <div class="col-md-5">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="https://aws.glamour.mx/prod/designs/v1/assets/620x620/209394.jpg" alt="Imagen coleccion" >
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <br>
+        <div class="divider border-top"></div>
+      <br>
+        <div class="row justify-content-center">
+            <div class="col-6 d-flex justify-content-center">
+                <h2>Desea recibir mas informacion</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-6 ">
+                <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label"> Nombre</label>
+                            <input type="text" class="form-control" >
+                            
+                </div>
+                <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="name@example.com">
+                </div>
+                <div class="d-grid">
+                  <button type="button" class="btn btn-success">Aceptar</button>
+                </div>
+                
+            </div>
+        </div>
+        <br>
+        
+    </div>
+    
+
+
+<!--FOOTER-->
+
+<!---->
+<app-footer></app-footer>
+
+</body>
 

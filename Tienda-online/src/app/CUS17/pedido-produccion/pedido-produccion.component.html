@@ -1,0 +1,84 @@
+<body class = "bg-light">
+
+<app-nav-bar>
+</app-nav-bar>
+
+<div class = "container">
+  <div class = "row">
+    <app-breadcrumb [tituloMenu] = "Menu">      
+    </app-breadcrumb>
+  </div>
+</div>
+
+<div class = "container">
+
+
+  <div class = "row">
+    <div class = "col-1">
+      <div class = "row"> 
+        <img src = ".\assets\imagenes\Productos\producto2_1.jpg" class = "imagen1">
+        <br>
+        <img src = ".\assets\imagenes\Productos\producto2_2.jpg" class = "imagen1">
+        <br>
+        <img src = ".\assets\imagenes\Productos\producto2_3.jpg" class = "imagen1">
+        <br>
+        <img src = ".\assets\imagenes\Productos\producto2_4.jpg" class = "imagen1">
+        
+      </div>
+    </div>
+    <div class = "col-5">
+      <img src = ".\assets\imagenes\Productos\producto2.jpg" class = "imagen2">
+    </div>
+    <div class = "col-6">
+      <div class = "card">
+        <div class = "card-header">
+          <h3 class = "text-center"> Jeans Miguelito </h3>
+        </div>
+        <div class = "card-body">
+          <p class = "sku-container">
+            <span class = "sku-label"> SKU: </span>
+            <span class = "sku sku-value"> 2021010101010 </span>
+          </p>
+          <div class = "product-rating product-rating-small" role = "button" tabindex = "0" aria-hidden = "true">
+            <div class = "stars-ranking stars-ranking-sprite--small stars-ranking-0"></div>
+          </div>
+          <h2 class = "product-description">
+            "Jeans Miguelito es una nueva version de jeans con un nuevo estilo original y comodo"
+          </h2>
+          <div>
+            <h5>Colores</h5>
+              <div class="d-flex justify-content-center">
+                <a href="" class="mx-1 my-2"><img src="./assets/imagenes/cuadro gris.jpg" alt=""></a>
+                <a href="" class="mx-1 my-2"><img src="./assets/imagenes/cuadro azul.jpg" alt=""></a>
+                <a href="" class="mx-1 my-2"><img src="./assets/imagenes/cuadro negro.jpg" alt=""></a>
+              </div>
+            <h5>Talla</h5>
+            <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-outline-dark btn-lg mx-1 my-2 text-center">26</button>
+                <button type="button" class="btn btn-outline-dark btn-lg mx-1 my-2">28</button>
+                <button type="button" class="btn btn-outline-dark btn-lg mx-1 my-2">30</button>
+                <button type="button" class="btn btn-outline-dark btn-lg mx-1 my-2">32</button>
+                <button type="button" class="btn btn-outline-dark btn-lg mx-1 my-2">34</button>
+            </div>
+            <h5> Cantidad </h5>
+            <div class="d-flex justify-content-center">
+              <label for="" class="mx-2">  </label><input type="number"  [(ngModel)]="cantidad"  class="form-control " value="1"  style="width: 20%;" min="1">
+            </div>
+          </div>
+          <div class="d-grid">
+            <button type="submit" class="btn btn-secondary btn-lg my-2" routerLink => Diseño personalizado</button>
+          </div> 
+          <div class="d-grid">
+            <button type="submit" class="btn btn-secondary btn-lg"> <i class="bi bi-cart-plus-fill"></i> Añadir a Carrito de Compra</button>
+            <button type="submit" class="btn btn-secondary btn-lg my-2"> Ir a Carrito de Compra </button>
+          </div> 
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+<app-footer></app-footer>
+
+</body>
