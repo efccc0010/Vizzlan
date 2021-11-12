@@ -11,6 +11,8 @@ import { InicioComponent } from './Vistas/inicio/inicio.component';
 import { ProductosComponent } from './Vistas/productos/productos.component';
 import { VisualizarDecoracionesComponent } from './CUS15/visualizar-decoraciones/visualizar-decoraciones.component';
 import { PedidoProduccionComponent } from './CUS17/pedido-produccion/pedido-produccion.component';
+import { ModificarPedidoComponent } from './CUS12/modificar-pedido/modificar-pedido.component';
+import { VisualizarEstadoComponent } from './CUS13/visualizar-estado/visualizar-estado.component';
 
 const routes: Routes = [
   {path:'', component:InicioComponent},
@@ -23,7 +25,9 @@ const routes: Routes = [
   {path:'Calculo-costo',component:CalculoCostoComponent},
   {path:'PagarPedidoEstandar',component:PagarPedidoEstandarComponent},
   {path:'Visualizar-decoraciones',component:VisualizarDecoracionesComponent},
-  {path:'PedidoProduccion', component: PedidoProduccionComponent}
+  {path:'PedidoProduccion', component: PedidoProduccionComponent},
+  {path:'Modificar-pedido', component: ModificarPedidoComponent},
+  {path:'Visualizar-estado', component: VisualizarEstadoComponent}
 ];
 
 @NgModule({
