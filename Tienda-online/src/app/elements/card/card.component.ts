@@ -7,6 +7,7 @@ import { ServicioDetalleProductoService } from 'src/app/servicios/servicio-detal
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent implements OnInit {
+  @Input()  Codigo:any;
   @Input()  urlImage: any;
   @Input()  Precio:any;
   @Input()  Titulo:any;
@@ -17,7 +18,8 @@ export class CardComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  VerDetalle(producto:any){
+  public VerDetalle(producto:any):void{
+    this.DatosProducto.codigo=producto.codigo;
     this.DatosProducto.nombre=producto.nombre;
     this.DatosProducto.precio=producto.precio;
     this.DatosProducto.rutaImg=producto.rutaImg;
