@@ -17,7 +17,7 @@ export class InicioComponent implements OnInit {
      clase:'carousel-item'},
     {url:'./assets/imagenes/Tipojeans3.jpeg',
     clase:'carousel-item'},
-    {url:'./assets/imagenes/Tipojeans4.jpg',
+    {url:'./assets/imagenes/TipoJeans5.jpg',
     clase:'carousel-item'}];
     this.Productos=[
       {Nombre:'P01',
