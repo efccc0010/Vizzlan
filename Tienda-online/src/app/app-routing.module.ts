@@ -14,6 +14,7 @@ import { PedidoProduccionComponent } from './CUS17/pedido-produccion/pedido-prod
 import { ModificarPedidoComponent } from './CUS12/modificar-pedido/modificar-pedido.component';
 import { VisualizarEstadoComponent } from './CUS13/visualizar-estado/visualizar-estado.component';
 
+
 const routes: Routes = [
   {path:'', component:InicioComponent},
   {path:'Productos',component:ProductosComponent},
