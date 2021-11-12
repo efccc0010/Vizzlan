@@ -10,7 +10,7 @@ export class DetalleProductoComponent implements OnInit {
     public Menu:any;
     public PrecioAntes:number;
     public RutaImg:any;
-    public cantidad:number=1;
+    public cantidad!:number;
     @Input() Producto:any;
     //---------------------resumen carrito --------------------//
     public MontoTotal:number=0;
@@ -41,9 +41,7 @@ export class DetalleProductoComponent implements OnInit {
       ruta:''}
     ]
     //-----------------------RESUMEN CARRITO-------------------------------//
-    this.DatosProducto.cantidad=this.cantidad;
-    this.DatosProducto.total=this.DatosProducto.total+this.cantidad*this.DatosProducto.precio;
-    this.DatosProducto.c_total=this.DatosProducto.c_total+this.cantidad;
+    
    }
    //--------------------------Añadir producto a carrito--------------//
     public ArmarCarrito(cod:string,nom :string,num:number,p:number):void{
@@ -54,17 +52,19 @@ export class DetalleProductoComponent implements OnInit {
           cantidad:num,
           subtotal:num*p}
         )
-        
+        /*
         for (let index = 0; index < this.DatosProducto.Productos.length; index++) {
           this.MontoTotal = 
           this.MontoTotal+this.DatosProducto.Productos[index].precio*this.DatosProducto.Productos[index].cantidad;
           this.CantidadTotal=this.CantidadTotal+this.DatosProducto.Productos[index].cantidad;
-        }
-        this.DatosProducto.total=this.MontoTotal;
-        this.DatosProducto.c_total=this.CantidadTotal;
+        }*/
+        this.DatosProducto.c_total=this.DatosProducto.c_total+num;
+        this.DatosProducto.total=num*p+this.DatosProducto.total;
+        alert(this.DatosProducto.c_total)
     }
     //-----------------------------------------------------------------//
   ngOnInit(): void {
+    this.cantidad=0;
   }
 
 }
