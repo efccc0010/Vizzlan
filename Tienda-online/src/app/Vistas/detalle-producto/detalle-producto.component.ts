@@ -60,7 +60,7 @@ export class DetalleProductoComponent implements OnInit {
         }*/
         this.DatosProducto.c_total=this.DatosProducto.c_total+num;
         this.DatosProducto.total=num*p+this.DatosProducto.total;
-        alert(this.DatosProducto.c_total)
+        
     }
     //-----------------------------------------------------------------//
   ngOnInit(): void {
