@@ -1,0 +1,75 @@
+<body class = "bg-light">
+
+  <app-nav-bar>
+  </app-nav-bar>
+  
+  <div class = "container">
+    <div class = "row">
+      <app-breadcrumb [tituloMenu] = "Menu">      
+      </app-breadcrumb>
+    </div>
+  </div>
+  
+  <div class = "container">
+  
+  
+    <div class = "row">
+      <div class = "col-6 offset-3">
+        <div class = "card">
+          <div class = "card-header">
+            <h3 class = "text-center"> Pedido #001 </h3>
+          </div>
+          <div class = "card-body">
+            <p class = "sku-container">
+              <span class = "sku-label"> SKU: </span>
+              <span class = "sku sku-value"> 2021010101010 </span>
+            </p>
+
+            <h2 class = "product-description">
+              "Jeans Miguelito es una nueva version de jeans con un nuevo estilo original y comodo"
+            </h2>
+
+            <div class = "row my-3">
+              <h5>Talla</h5>
+              <div class="d-flex justify-content-center">
+                  <button type="button" class="btn btn-outline-dark btn-lg mx-1 my-2 text-center">26</button>
+                  <button type="button" class="btn btn-outline-dark btn-lg mx-1 my-2">28</button>
+                  <button type="button" class="btn btn-outline-dark btn-lg mx-1 my-2">30</button>
+                  <button type="button" class="btn btn-outline-dark btn-lg mx-1 my-2">32</button>
+                  <button type="button" class="btn btn-outline-dark btn-lg mx-1 my-2">34</button>
+              </div>
+            </div>
+
+            <div class = "row my-3">
+
+            </div>
+
+            <div>
+              <h5>Colores</h5>
+                <div class="d-flex justify-content-center">
+                  <a href="" class="mx-1 my-2"><img src="./assets/imagenes/cuadro gris.jpg" alt=""></a>
+                  <a href="" class="mx-1 my-2"><img src="./assets/imagenes/cuadro azul.jpg" alt=""></a>
+                  <a href="" class="mx-1 my-2"><img src="./assets/imagenes/cuadro negro.jpg" alt=""></a>
+                </div>
+              <h5> Cantidad </h5>
+              <div class="d-flex justify-content-center">
+                <label for="" class="mx-2">  </label><input type="number"  [(ngModel)]="cantidad"  class="form-control " value="1"  style="width: 20%;" min="1">
+              </div>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-secondary btn-lg my-2" routerLink = "DisenoPersonalizado"> Adjuntar Diseño personalizado</button>
+            </div> 
+            <div class="d-grid">
+              <button type="submit" class="btn btn-secondary btn-lg"> <i class="bi bi-cart-plus-fill"></i> Añadir a Carrito de Compra</button>
+              <button type="submit" class="btn btn-secondary btn-lg my-2"> Ir a Carrito de Compra </button>
+            </div> 
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  </body>
+  
