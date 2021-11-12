@@ -31,6 +31,7 @@ import { SubirImagenComponent } from './CUS18/subir-imagen/subir-imagen.componen
 import { ModificarPedidoComponent } from './CUS12/modificar-pedido/modificar-pedido.component';
 import { VisualizarEstadoComponent } from './CUS13/visualizar-estado/visualizar-estado.component';
 import { DisenoPersonalizadoComponent } from './CUS18/diseno-personalizado/diseno-personalizado.component';
+import { FormDisenoComponent } from './CUS18/form-diseno/form-diseno.component';
 
 
 @NgModule({
@@ -61,13 +62,14 @@ import { DisenoPersonalizadoComponent } from './CUS18/diseno-personalizado/disen
     SubirImagenComponent,
     ModificarPedidoComponent,
     VisualizarEstadoComponent,
-    DisenoPersonalizadoComponent
+    DisenoPersonalizadoComponent,
+    FormDisenoComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
