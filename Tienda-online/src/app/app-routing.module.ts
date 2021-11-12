@@ -11,7 +11,7 @@ import { InicioComponent } from './Vistas/inicio/inicio.component';
 import { ProductosComponent } from './Vistas/productos/productos.component';
 import { VisualizarDecoracionesComponent } from './CUS15/visualizar-decoraciones/visualizar-decoraciones.component';
 import { PedidoProduccionComponent } from './CUS17/pedido-produccion/pedido-produccion.component';
-import { MensajeConfirmarDecoracionComponent } from './CUS16/mensaje-confirmar-decoracion/mensaje-confirmar-decoracion.component';
+
 
 const routes: Routes = [
   {path:'', component:InicioComponent},
@@ -25,7 +25,7 @@ const routes: Routes = [
   {path:'PagarPedidoEstandar',component:PagarPedidoEstandarComponent},
   {path:'Visualizar-decoraciones',component:VisualizarDecoracionesComponent},
   {path:'PedidoProduccion', component: PedidoProduccionComponent},
-  {path:'MensajeConfirmacion',component:MensajeConfirmarDecoracionComponent}
+  
 ];
 
 @NgModule({
