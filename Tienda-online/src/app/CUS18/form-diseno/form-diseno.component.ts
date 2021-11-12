@@ -10,6 +10,7 @@ export class FormDisenoComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }
