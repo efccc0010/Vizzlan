@@ -14,70 +14,58 @@
             <h2 class="text-center">PRODUCTOS</h2>
             <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
+                    <div class="carousel-item"
+                    [ngClass]="{
+                        active: isFirst,
+                        lastactive: isLast,
+                        even: isEven,
+                        odd: isOdd
+                    }"
+                    [class.active]="isFirst"
+                    [class.lastactive]="isLast"
+                    [class.even]="isEven"
+                    [class.odd]="isOdd" 
+                    *ngFor="let item of ListaProductosPedidoEspecial;index as i; first as isFirst; last as isLast; even as isEven; odd as isOdd">
                         <div class="row" class="text-center">
-                            <img src="./assets/imagenes/Productos/producto1.jpg" class="img-responsive fit-image2">
+                            <img [src]="item.ImagenProductoPedidoEspecial" class="img-responsive fit-image2">
                         </div>
                         <div class="row-md">
-                            <table class="table">
-                                <tbody>
-                                <tr>
-                                    <th scope="row">CANTIDAD</th>
-                                    <td class="text-end"><input type = "number" id="number"></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">DECORACIÓN AÑADIDA</th>
-                                    <td class="text-end">DECORACION001</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">PRECIO</th>
-                                    <td class="text-end">S/ 10.00</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">MONTO DECORACIÓN</th>
-                                    <td class="text-end">S/ 1000.00</td>
-                                </tr>
-                                </tbody>
-                            </table>
+                            <div class="carousel">
+                                <table class="table table-borderless">
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">DECORACIÓN AÑADIDA</th>
+                                        <td class="mx-3">{{item.TipoDecoracion}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">CANTIDAD</th>
+                                        <td class="mx-3">
+                                            <input type="number" class="form-control" [value]="item.Cantidad" [(ngModel)]="item.Cantidad" style="width: 50%" min="1">
+                                        </td> 
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">PRECIO</th>
+                                        <td class="mx-3">S/ {{item.PrecioDecoracion}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">MONTO DECORACIÓN</th>
+                                        <td class="mx-3">S/ {{item.Cantidad*item.PrecioDecoracion}}</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="row" class="text-center">
-                        <img src="./assets/imagenes/Productos/producto2.jpg" class="img-responsive fit-image2">
                     </div>
-                    <div class="row-md">
-                        <table class="table">
-                            <tbody>
-                            <tr>
-                                <th scope="row">CANTIDAD</th>
-                                <td class="text-end"><input type = "number" id="number"></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">DECORACIÓN AÑADIDA</th>
-                                <td class="text-end">DECORACION001</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">PRECIO</th>
-                                <td class="text-end">S/ 10.00</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">MONTO DECORACIÓN</th>
-                                <td class="text-end">S/ 1000.00</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                  </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
+            </div>
         </div>
         <div class="col-6">
             <app-lista-decoraciones-principales>
