@@ -28,6 +28,9 @@ import { VisualizarDecoracionesComponent } from './CUS15/visualizar-decoraciones
 import { PedidoProduccionComponent } from './CUS17/pedido-produccion/pedido-produccion.component';
 import { FooterComponent } from './elements/footer/footer.component';
 import { SubirImagenComponent } from './CUS18/subir-imagen/subir-imagen.component';
+import { ModificarPedidoComponent } from './CUS12/modificar-pedido/modificar-pedido.component';
+import { VisualizarEstadoComponent } from './CUS13/visualizar-estado/visualizar-estado.component';
+
 
 @NgModule({
   declarations: [
@@ -54,7 +57,9 @@ import { SubirImagenComponent } from './CUS18/subir-imagen/subir-imagen.componen
     VisualizarDecoracionesComponent,
     PedidoProduccionComponent,
     FooterComponent,
-    SubirImagenComponent
+    SubirImagenComponent,
+    ModificarPedidoComponent,
+    VisualizarEstadoComponent
 
   ],
   imports: [
