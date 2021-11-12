@@ -2,7 +2,7 @@
     <div class="container-fluid">
       <a class="navbar-brand" routerLink="">VIZZLAN</a>
       <form class="d-flex">
-        <a routerLink="/Carrito-compra" class="nav-link" style="color:white"> <span> <i class="bi bi-cart-fill mx-2"></i> <span>Cantidad</span>Productos | S/. MontoTotal </span> </a>
+        <a routerLink="/Carrito-compra" class="nav-link" style="color:white"> <span> <i class="bi bi-cart-fill mx-2"></i> <span>Cantidad: </span>{{datoCarrito.c_total}} | S/. {{datoCarrito.total}} </span> </a>
         <a routerLink="/Ingresar" class="nav-link" style="color:white" *ngIf="servicioComunicacion.nombreUsuario==null">Login<i class="bi bi-person-circle"></i></a>
         <div class="btn-group mx-4" >
           <button *ngIf="servicioComunicacion.nombreUsuario!=null"  type="button" class="btn btn-info dropdown-toggle bg-dark" data-bs-toggle="dropdown" aria-expanded="false" style="color: #f8f9fa;">

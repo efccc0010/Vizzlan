@@ -145,7 +145,7 @@
                 <div class="row mx-3" *ngIf="iF<longitud">
                   <ng-container *ngFor="let itemP of Productos; let iProd=index">
                     <div class="col-6" *ngIf="iProd>=2*(iF) && iProd<2*(iF+1)">
-                      <app-card [Precio]="itemP.precio" [urlImage]="itemP.rutaImg" [Titulo]='itemP.nombre' [Codigo]='itemP.codigo'>
+                      <app-card [Precio]="itemP.precio" [urlImage]="itemP.rutaImg" [Producto]="itemP" [Titulo]='itemP.nombre' [Codigo]='itemP.codigo'>
 
                       </app-card>
                     </div>
