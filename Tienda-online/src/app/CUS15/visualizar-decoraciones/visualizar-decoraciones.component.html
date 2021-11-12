@@ -1,6 +1,26 @@
 <app-nav-bar>
     
 </app-nav-bar>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">DECORACIÓN AÑADIDA</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/imagenes/Decoraciones/decoracion2.jpg" class="img-fluid">
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">RESERVAR</button>
+            <button type="button" class="btn btn-primary">PAGAR</button>
+        </div>
+        <div class="col-xs-4" class="text-center mx-2 my-2">
+            <button type="button" class="btn btn-secondary" routerLink="/Pedido-especial" data-bs-dismiss="modal">VOLVER A PEDIDO ESPECIAL</button>
+        </div>
+      </div>
+    </div>
+</div>
 <main>
     <section class="py-5 text-center container">
         <div class="row py-log-5">
@@ -16,11 +36,12 @@
                     <span class="fs-1 fw-semibold">FILTRO</span>
                 </a>
                 <ul class="list-unstyled ps-0">
+                    <!-- Filtro de materiales de jeans -->
                     <li class="mb-1">
-                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#material-collapse" aria-expanded="true">
                       MATERIAL
                     </button>
-                    <div class="collapse show" id="home-collapse">
+                    <div class="collapse show" id="material-collapse">
                       <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                         <li><a href="/Visualizar-decoraciones" class="link-dark rounded">Denim de algodón serge</a></li>
                         <li><a href="/Visualizar-decoraciones" class="link-dark rounded">Denim crud</a></li>
@@ -31,11 +52,12 @@
                       </ul>
                     </div>
                     </li>
+                    <!-- Filtro de colores de decoración -->
                     <li class="mb-1">
-                    <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="true">
+                    <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#color-collapse" aria-expanded="true">
                       COLOR
                     </button>
-                    <div class="collapse show" id="dashboard-collapse">
+                    <div class="collapse show" id="color-collapse">
                       <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                         <li><a href="/Visualizar-decoraciones" class="link-dark rounded">Negro</a></li>
                         <li><a href="/Visualizar-decoraciones" class="link-dark rounded">Azul</a></li>
@@ -45,11 +67,12 @@
                       </ul>
                     </div>
                     </li>
+                    <!-- Filtro de posición de la decoración en el jeans-->
                     <li class="mb-1">
-                    <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="true">
+                    <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#posicion-collapse" aria-expanded="true">
                       POSICIÓN
                     </button>
-                    <div class="collapse show" id="orders-collapse">
+                    <div class="collapse show" id="posicion-collapse">
                       <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                         <li><a href="/Visualizar-decoraciones" class="link-dark rounded">Scallop</a></li>
                         <li><a href="/Visualizar-decoraciones" class="link-dark rounded">Presillas</a></li>
@@ -61,11 +84,12 @@
                       </ul>
                     </div>
                     </li>
+                    <!-- Filtro de modelo de jeans -->
                     <li class="mb-1">
-                    <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#tipo-jeans-collapse" aria-expanded="true">
-                      TIPO DE JEANS
+                    <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#modelo-collapse" aria-expanded="true">
+                      MODELO DE JEANS
                     </button>
-                    <div class="collapse show" id="orders-collapse">
+                    <div class="collapse show" id="modelo-collapse">
                       <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                         <li><a href="/Visualizar-decoraciones" class="link-dark rounded">Reta</a></li>
                         <li><a href="/Visualizar-decoraciones" class="link-dark rounded">Skinny</a></li>
@@ -77,11 +101,12 @@
                       </ul>
                     </div>
                     </li>
+                    <!-- Filtro de precio de decoraciones -->
                     <li class="mb-1">
                     <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#precio-collapse" aria-expanded="true">
                       PRECIO
                     </button>
-                    <div class="collapse show" id="orders-collapse">
+                    <div class="collapse show" id="precio-collapse">
                         <div class="accordion-body">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -148,7 +173,7 @@
                                     <p>Negro</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                       <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary" routerLink="/MensajeConfirmacion">AGREGAR</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">AGREGAR</button>
                                         <button type="button" class="btn btn-sm btn-outline-secondary">VER DETALLES</button>
                                       </div>
                                       <small class="text-muted">S/7.99</small>

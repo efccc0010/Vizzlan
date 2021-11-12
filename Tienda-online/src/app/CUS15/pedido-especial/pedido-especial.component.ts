@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pedido-especial.component.scss']
 })
 export class PedidoEspecialComponent implements OnInit {
-  public Menu!:any;
+  public Menu:any;
   public ListaProductosPedidoEspecial: any;
   constructor() {
     //----------------Menu de progreso----------------------//
@@ -18,27 +18,27 @@ export class PedidoEspecialComponent implements OnInit {
         clase:'breadcrumb-item active',
         ruta:'Pedido-Especial'}
       ]
-      //---------------------------------------------------//
+    //----------------Productos de Pedido Especial---------//
       this.ListaProductosPedidoEspecial=[
         {
-          ImagenProductoPedidoEspecial:'Imagen01',
-          Cantidad:'100',
-          DecoracionAñadida:'DECORACION01',
-          PrecioDecoracion:'10.00',
+          ImagenProductoPedidoEspecial:'./assets/imagenes/Productos/producto1.jpg',
+          Cantidad:1,
+          TipoDecoracion:'DECORACION01',
+          PrecioDecoracion:10.49,
           MontoTotalDecoracion:null,
         },
         {
-          ImagenProductoPedidoEspecial:'Imagen01',
-          Cantidad:'100',
-          DecoracionAñadida:'DECORACION01',
-          PrecioDecoracion:'10.00',
+          ImagenProductoPedidoEspecial:'./assets/imagenes/Productos/producto2.jpg',
+          Cantidad:1,
+          TipoDecoracion:'DECORACION02',
+          PrecioDecoracion:7.99,
           MontoTotalDecoracion:null,
         },
         {
-          ImagenProductoPedidoEspecial:'Imagen01',
-          Cantidad:'100',
-          DecoracionAñadida:'DECORACION01',
-          PrecioDecoracion:'10.00',
+          ImagenProductoPedidoEspecial:'./assets/imagenes/Productos/producto3.jpg',
+          Cantidad:1,
+          TipoDecoracion:'DECORACION03',
+          PrecioDecoracion:19.99,
           MontoTotalDecoracion:null,
         }
       ]
