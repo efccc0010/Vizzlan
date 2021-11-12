@@ -34,10 +34,7 @@ const routes: Routes = [
   {path:'Modificar-pedido', component: ModificarPedidoComponent},
   {path:'Visualizar-estado', component: VisualizarEstadoComponent},
   {path:'DisenoPersonalizado', component: DisenoPersonalizadoComponent},
-<<<<<<< HEAD
-=======
   {path:'ConsultaPedidoProduccion', component: PedidoProduccionPlantillaComponent}
->>>>>>> 19465830f36645c0e4239954c9be97e3484fb73a
 ];
 
 @NgModule({

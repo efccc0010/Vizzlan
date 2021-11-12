@@ -65,10 +65,6 @@ import { PedidoProduccionPlantillaComponent } from './CUS17/pedido-produccion-pl
     VisualizarEstadoComponent,
     DisenoPersonalizadoComponent,
     FormDisenoComponent,
-<<<<<<< HEAD
-=======
-    PedidoProduccionPlantillaComponent
->>>>>>> 19465830f36645c0e4239954c9be97e3484fb73a
 
   ],
   imports: [
