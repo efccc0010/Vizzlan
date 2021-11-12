@@ -11,6 +11,24 @@
     </div>
   </div>
 </nav>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Evaluación Exitosa</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Se envio la evalución y el ticket al correo del usuario US0001
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Confirmar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="container">
   <div class="row justify-content-center"> 
     <div class="col-12">
@@ -24,7 +42,7 @@
   
   <div class="col-6 offset-3">
     <div class="row">
-      <h3 class="fw-bold" >Pedido Especial</h3>
+      <h3 class="fw-bold" >Pedido de Produccion</h3>
       <div class="col-4">
     <p class="fw-bold" >COD:</p>
     <input type="text" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
@@ -78,7 +96,7 @@
   </div>
   <div class="my-4 px-2">
     <button type="button" class="btn btn-primary me-2">Volver</button>
-    <button type="button" class="btn btn-primary ms-2">Confirmar</button>
+    <button type="button" class="btn btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Confirmar</button>
   </div>
   </div>  
 </div>

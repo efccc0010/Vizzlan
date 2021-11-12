@@ -32,7 +32,7 @@ const routes: Routes = [
   {path:'SubirImagen', component: SubirImagenComponent},
   {path:'Modificar-pedido', component: ModificarPedidoComponent},
   {path:'Visualizar-estado', component: VisualizarEstadoComponent},
-  {path:'DisenoPersonalizado', component: DisenoPersonalizadoComponent}
+  {path:'DisenoPersonalizado', component: DisenoPersonalizadoComponent},
 ];
 
 @NgModule({

@@ -63,7 +63,7 @@ import { FormDisenoComponent } from './CUS18/form-diseno/form-diseno.component';
     ModificarPedidoComponent,
     VisualizarEstadoComponent,
     DisenoPersonalizadoComponent,
-    FormDisenoComponent
+    FormDisenoComponent,
 
   ],
   imports: [
