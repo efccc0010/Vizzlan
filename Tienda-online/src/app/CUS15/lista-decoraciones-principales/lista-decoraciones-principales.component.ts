@@ -15,12 +15,12 @@ export class ListaDecoracionesPrincipalesComponent implements OnInit {
           precio:10.00
         },
         {
-          imagen:'./assets/imagenes/Decoraciones/decoracion3.jpg',
+          imagen:'./assets/imagenes/Decoraciones/decoracion2.jpg',
           nombre:'DECORACIÓN02',
           precio:7.00
         },
         {
-          imagen:'./assets/imagenes/Decoraciones/decoracion2.png',
+          imagen:'./assets/imagenes/Decoraciones/decoracion3.jpg',
           nombre:'DECORACIÓN03',
           precio:8.00
         },
