@@ -1,11 +1,11 @@
- <nav class="navbar navbar-light bg-light">
+ <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" routerLink="">VIZZLAN</a>
       <form class="d-flex">
-        <a routerLink="/Carrito-compra" class="nav-link" style="color:black"> <span> <i class="bi bi-cart-fill mx-2"></i> <span>Cantidad</span>Productos | S/. MontoTotal </span> </a>
-        <a routerLink="/Ingresar" class="nav-link" style="color:black" *ngIf="servicioComunicacion.nombreUsuario==null">Login<i class="bi bi-person-circle"></i></a>
+        <a routerLink="/Carrito-compra" class="nav-link" style="color:white"> <span> <i class="bi bi-cart-fill mx-2"></i> <span>Cantidad</span>Productos | S/. MontoTotal </span> </a>
+        <a routerLink="/Ingresar" class="nav-link" style="color:white" *ngIf="servicioComunicacion.nombreUsuario==null">Login<i class="bi bi-person-circle"></i></a>
         <div class="btn-group mx-4" >
-          <button *ngIf="servicioComunicacion.nombreUsuario!=null"  type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #f8f9fa;">
+          <button *ngIf="servicioComunicacion.nombreUsuario!=null"  type="button" class="btn btn-info dropdown-toggle bg-dark" data-bs-toggle="dropdown" aria-expanded="false" style="color: #f8f9fa;">
             <i class="bi bi-person-circle"></i><span class="ms-3">{{servicioComunicacion.nombreUsuario}} </span>
           </button>
           <ul class="dropdown-menu">
@@ -16,8 +16,8 @@
             <li><a class="dropdown-item" routerLink="/PedidoProduccion">Pedido de Produccion</a></li>
           </ul>
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button  class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"  ></span>
         </button>
       </form>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
