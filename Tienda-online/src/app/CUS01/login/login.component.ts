@@ -8,13 +8,16 @@ import { ServicioDatoLoginService } from '../Services/servicio-dato-login.servic
 })
 export class LoginComponent implements OnInit {
   Usuario!:String
+  public ruta:string='';
   constructor(private servicioComunicacion:ServicioDatoLoginService) { }
 
   ngOnInit(): void {
   }
   FuncionIngresar(){
     this.servicioComunicacion.nombreUsuario=this.Usuario;
-    alert('Usuario aceptado')
+    alert('Usuario aceptado');
+    this.ruta=' ';
+
   }
 
 }
