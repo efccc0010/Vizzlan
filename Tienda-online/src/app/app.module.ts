@@ -32,6 +32,7 @@ import { ModificarPedidoComponent } from './CUS12/modificar-pedido/modificar-ped
 import { VisualizarEstadoComponent } from './CUS13/visualizar-estado/visualizar-estado.component';
 import { DisenoPersonalizadoComponent } from './CUS18/diseno-personalizado/diseno-personalizado.component';
 import { FormDisenoComponent } from './CUS18/form-diseno/form-diseno.component';
+import { PedidoProduccionPlantillaComponent } from './CUS17/pedido-produccion-plantilla/pedido-produccion-plantilla.component';
 
 
 @NgModule({
@@ -64,6 +65,10 @@ import { FormDisenoComponent } from './CUS18/form-diseno/form-diseno.component';
     VisualizarEstadoComponent,
     DisenoPersonalizadoComponent,
     FormDisenoComponent,
+<<<<<<< HEAD
+=======
+    PedidoProduccionPlantillaComponent
+>>>>>>> 19465830f36645c0e4239954c9be97e3484fb73a
 
   ],
   imports: [
