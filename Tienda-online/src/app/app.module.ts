@@ -30,6 +30,7 @@ import { FooterComponent } from './elements/footer/footer.component';
 import { SubirImagenComponent } from './CUS18/subir-imagen/subir-imagen.component';
 import { ModificarPedidoComponent } from './CUS12/modificar-pedido/modificar-pedido.component';
 import { VisualizarEstadoComponent } from './CUS13/visualizar-estado/visualizar-estado.component';
+import { DisenoPersonalizadoComponent } from './CUS18/diseno-personalizado/diseno-personalizado.component';
 
 
 @NgModule({
@@ -59,7 +60,8 @@ import { VisualizarEstadoComponent } from './CUS13/visualizar-estado/visualizar-
     FooterComponent,
     SubirImagenComponent,
     ModificarPedidoComponent,
-    VisualizarEstadoComponent
+    VisualizarEstadoComponent,
+    DisenoPersonalizadoComponent
 
   ],
   imports: [
