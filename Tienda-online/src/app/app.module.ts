@@ -65,6 +65,7 @@ import { PedidoProduccionPlantillaComponent } from './CUS17/pedido-produccion-pl
     VisualizarEstadoComponent,
     DisenoPersonalizadoComponent,
     FormDisenoComponent,
+    PedidoProduccionPlantillaComponent
 
   ],
   imports: [

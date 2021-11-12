@@ -34,7 +34,7 @@ const routes: Routes = [
   {path:'Modificar-pedido', component: ModificarPedidoComponent},
   {path:'Visualizar-estado', component: VisualizarEstadoComponent},
   {path:'DisenoPersonalizado', component: DisenoPersonalizadoComponent},
-  {path:'ConsultaPedidoProduccion', component: PedidoProduccionPlantillaComponent}
+  {path:'PedidoProduccionPlantilla', component: PedidoProduccionPlantillaComponent}
 ];
 
 @NgModule({
