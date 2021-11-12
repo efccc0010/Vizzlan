@@ -9,43 +9,36 @@ import { ServicioDetalleProductoService } from 'src/app/servicios/servicio-detal
 export class PedidoProduccionComponent implements OnInit {
   public Menu:any;
   public PrecioAntes:number;
-  public RutaImg:any;
+  public RutaImg:any = "";
   public cantidad:number=1;
   @Input() Producto:any;
-  //---------------------resumen carrito --------------------//
+
   public MontoTotal:number=0;
   public CantidadTotal:number=0;
-  //---------------------------------------------------------//
+
 constructor(public DatosProducto:ServicioDetalleProductoService ) {
-  //----------------Precio antes--------------------------//
+
   this.PrecioAntes=1.2*this.DatosProducto.precio;
-  //-----------------Cantidad de productos--------------------//
-  
-  
-  //------------------------------------------------------//
-  //----------------Imagen--------------------------------//
+
   this.RutaImg=this.DatosProducto.rutaImg;
-  //----------------Menu de progreso----------------------//
+
   this.Menu=[
     {nombre:'Home',
     clase:'breadcrumb-item',
     ruta:''},
-    {nombre:'Productos',
+    {nombre:'Pedido Produccion',
     clase:'breadcrumb-item',
     ruta:''},
-    {nombre:'Jean',
-    clase:'breadcrumb-item',
-    ruta:''},
-    {nombre:'Producto1',
+    {nombre:'Pedido 001',
     clase:'breadcrumb-item active',
-    ruta:''}
+    ruta:''},
   ]
-  //-----------------------RESUMEN CARRITO-------------------------------//
+
   this.DatosProducto.cantidad=this.cantidad;
   this.DatosProducto.total=this.DatosProducto.total+this.cantidad*this.DatosProducto.precio;
   this.DatosProducto.c_total=this.DatosProducto.c_total+this.cantidad;
  }
- //--------------------------Añadir producto a carrito--------------//
+
   public ArmarCarrito(cod:string,nom :string,num:number,p:number):void{
       this.DatosProducto.Productos.push(
         {codigo:cod,

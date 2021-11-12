@@ -1,76 +1,92 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">VIZZLAN</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        </ul>
-        <a style="color:black">Administrador<i class="bi bi-person-bounding-box"></i></a>
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="">VIZZLAN</a>
+    <form class="d-flex">
+      <a  class="nav-link" style="color:white"> <span>Administrador<i class="bi bi-person-bounding-box"></i> </span> </a>
+    </form>
+  </div>
+</nav>
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modificacion Exitosa</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Se han guardado los cambios
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Confirmar</button>
+        </div>
       </div>
     </div>
-  </nav>
-  
-  <div class="btn-group" role="group" aria-label="Basic example">
-    <button type="button" class="btn btn-primary">Pedidos Especiales</button>
-    <button type="button" class="btn btn-primary">Pedidos de Producción</button>
-    <button type="button" class="btn btn-primary">Modificar Productos</button>
   </div>
-  
-  <p class="fw-bold" >Modificacion Pedidos</p>
-  <div class="container" class="col-6">
-  <div class="row">
-    <div class="col-2">
-    <p class="fw-bold" >COD:</p>
-    <input type="text" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
-  </div>
-  <div class="col-2">
-    <p class="fw-bold" >FECHA PEDIDO:</p>
-    <input type="text" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
-    <i class="bi bi-calendar3"></i>
-  </div>
-  <div class="col-2">
-    <p class="fw-bold" >COD USER:</p>
-    <input type="text" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
-  </div>
-  
-  </div>
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">Descripcion</th>
-          <th scope="col">Preview</th>
-          <th scope="col">Cantidad</th>
-          <th scope="col">Precio Unitario</th>
-          <th scope="col">Eliminar</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">Piedras especiales</th>
-          <td><a href="#" class="link-primary">Imagen</a></td>
-          <td><input type="number" style="width: 50%;" min="1"></td>
-          <td>S/ 50</td>
-          <td><i class="bi bi-trash"></i></td>
-        </tr>
-        <tr>
-          <th scope="row">Lavado de pantalon</th>
-          <td><a href="#" class="link-primary">Imagen</a></td>
-          <td><input type="number" style="width: 50%;" min="1"></td>
-          <td>S/ 20</td>
-          <td><i class="bi bi-trash"></i></td>
-        </tr>
-        <tr>
-          <th scope="row">Pantalon jean clasico</th>
-          <td><a href="#" class="link-primary">Imagen</a></td>
-          <td><input type="number" style="width: 50%;" min="1"></td>
-          <td>S/ 18</td>
-          <td><i class="bi bi-trash"></i></td>
-        </tr>
-      </tbody>
-    </table>  
-    
-    <button type="button" class="btn btn-primary">Volver</button>
-    <button type="button" class="btn btn-primary">Guardar</button>
-  </div>  
+
+  <div class="container">
+    <div class="row justify-content-center"> 
+      <div class="col-12">
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-primary">Pedidos Especiales</button>
+          <button type="button" class="btn btn-primary">Pedidos de Producción</button>
+          <button type="button" class="btn btn-primary">Modificar Pedido</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 offset-3"> 
+      <div class="row">
+      <h3 class="fw-bold" >Modificar Pedido</h3>
+        <div class="col-4">
+        <p class="fw-bold" >COD:</p>
+        <input type="text" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+      </div>
+      <div class="col-4">
+        <p class="fw-bold" >FECHA PEDIDO:</p>
+        <input type="date" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+      </div>
+      <div class="col-4">
+        <p class="fw-bold" >COD USER:</p>
+        <input type="text" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+      </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Descripcion</th>
+              <th scope="col">Preview</th>
+              <th scope="col">Cantidad</th>
+              <th scope="col">Precio Unitario</th>
+              <th scope="col">Eliminar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Piedras especiales</th>
+              <td><a href="#" class="link-primary">Imagen</a></td>
+              <td><input type="number" style="width: 50%;" min="1"></td>
+              <td>S/ 50</td>
+              <td><i class="bi bi-trash"></i></td>
+            </tr>
+            <tr>
+              <th scope="row">Lavado de pantalon</th>
+              <td><a href="#" class="link-primary">Imagen</a></td>
+              <td><input type="number" style="width: 50%;" min="1"></td>
+              <td>S/ 20</td>
+              <td><i class="bi bi-trash"></i></td>
+            </tr>
+            <tr>
+              <th scope="row">Pantalon jean clasico</th>
+              <td><a href="#" class="link-primary">Imagen</a></td>
+              <td><input type="number" style="width: 50%;" min="1"></td>
+              <td>S/ 18</td>
+              <td><i class="bi bi-trash"></i></td>
+            </tr>
+          </tbody>
+        </table>  
+        
+        <div class="my-4 px-2">
+          <button type="button" class="btn btn-primary me-2">Volver</button>
+          <button type="button" class="btn btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Guardar</button>
+        </div>
+      </div>  
+    </div>
