@@ -27,6 +27,7 @@ import { CalculoCostoComponent } from './CUS11/calculo-costo/calculo-costo.compo
 import { VisualizarDecoracionesComponent } from './CUS15/visualizar-decoraciones/visualizar-decoraciones.component';
 import { PedidoProduccionComponent } from './CUS17/pedido-produccion/pedido-produccion.component';
 import { FooterComponent } from './elements/footer/footer.component';
+import { MensajeConfirmarDecoracionComponent } from './CUS16/mensaje-confirmar-decoracion/mensaje-confirmar-decoracion.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { FooterComponent } from './elements/footer/footer.component';
     PagarPedidoEstandarComponent,
     VisualizarDecoracionesComponent,
     PedidoProduccionComponent,
-    FooterComponent
+    FooterComponent,
+    MensajeConfirmarDecoracionComponent
 
   ],
   imports: [
