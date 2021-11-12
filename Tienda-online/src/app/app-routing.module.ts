@@ -16,6 +16,8 @@ import { ModificarPedidoComponent } from './CUS12/modificar-pedido/modificar-ped
 import { VisualizarEstadoComponent } from './CUS13/visualizar-estado/visualizar-estado.component';
 import { DisenoPersonalizadoComponent } from './CUS18/diseno-personalizado/diseno-personalizado.component';
 import { PedidoProduccionPlantillaComponent } from './CUS17/pedido-produccion-plantilla/pedido-produccion-plantilla.component';
+import { VisualizarEstadoProduccionComponent } from './CUS13/visualizar-estado-produccion/visualizar-estado-produccion.component';
+import { VisualizarEstadoEspecialComponent } from './CUS13/visualizar-estado-especial/visualizar-estado-especial.component';
 
 
 const routes: Routes = [
@@ -34,7 +36,9 @@ const routes: Routes = [
   {path:'Modificar-pedido', component: ModificarPedidoComponent},
   {path:'Visualizar-estado', component: VisualizarEstadoComponent},
   {path:'DisenoPersonalizado', component: DisenoPersonalizadoComponent},
-  {path:'PedidoProduccionPlantilla', component: PedidoProduccionPlantillaComponent}
+  {path:'PedidoProduccionPlantilla', component: PedidoProduccionPlantillaComponent},
+  {path:'Visualizar-estado-produccion', component: VisualizarEstadoProduccionComponent},
+  {path:'Visualizar-estado-especial', component: VisualizarEstadoEspecialComponent}
 ];
 
 @NgModule({
