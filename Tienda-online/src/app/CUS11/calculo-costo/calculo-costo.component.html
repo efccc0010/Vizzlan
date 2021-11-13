@@ -15,10 +15,10 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        Se envio la evalución y el ticket al correo del usuario US0001
+        Se envio la evaluación y el ticket al correo del usuario US0001
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Confirmar</button>
+        <button data-bs-dismiss="modal" rtype="button" class="btn btn-primary">Confirmar</button>
       </div>
     </div>
   </div>
@@ -28,9 +28,8 @@
   <div class="row justify-content-center"> 
     <div class="col-12">
       <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-primary">Pedidos Especiales</button>
-        <button type="button" class="btn btn-primary">Pedidos de Producción</button>
-        <button type="button" class="btn btn-primary">Modificar Producto</button>
+        <button routerLink="/Visualizar-estado-especial" type="button" class="btn btn-primary">Pedidos Especiales</button>
+        <button routerLink="/Visualizar-estado-produccion" type="button" class="btn btn-primary">Pedidos de Producción</button>
       </div>
     </div>
   </div>
@@ -90,7 +89,7 @@
     <p class="fw-bold">Total a pagar  S/ 91.2</p>
   </div>
   <div class="my-4 px-2">
-    <button type="button" class="btn btn-primary me-2">Volver</button>
+    <button routerLink="/Visualizar-estado-produccion" type="button" class="btn btn-primary me-2">Volver</button>
     <button type="button" class="btn btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Confirmar</button>
   </div>
   </div>  

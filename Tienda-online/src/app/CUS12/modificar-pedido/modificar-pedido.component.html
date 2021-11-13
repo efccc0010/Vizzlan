@@ -18,7 +18,7 @@
           Se han guardado los cambios
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Confirmar</button>
+          <button data-bs-dismiss="modal" type="button" class="btn btn-primary">Confirmar</button>
         </div>
       </div>
     </div>
@@ -28,9 +28,8 @@
     <div class="row justify-content-center"> 
       <div class="col-12">
         <div class="btn-group" role="group" aria-label="Basic example">
-          <button type="button" class="btn btn-primary">Pedidos Especiales</button>
-          <button type="button" class="btn btn-primary">Pedidos de Producción</button>
-          <button type="button" class="btn btn-primary">Modificar Producto</button>
+          <button routerLink="/Visualizar-estado-especial" type="button" class="btn btn-primary">Pedidos Especiales</button>
+          <button routerLink="/Visualizar-estado-produccion" type="button" class="btn btn-primary">Pedidos de Producción</button>
         </div>
       </div>
     </div>
@@ -85,7 +84,7 @@
         </table>  
         
         <div class="my-4 px-2">
-          <button type="button" class="btn btn-primary me-2">Volver</button>
+          <button routerLink="/Visualizar-estado-produccion" type="button" class="btn btn-primary me-2">Volver</button>
           <button type="button" class="btn btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Guardar</button>
         </div>
       </div>  
