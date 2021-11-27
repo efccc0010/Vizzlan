@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ServicioDetalleProductoService } from 'src/app/servicios/servicio-detalle-producto.service';
+import { Caracteristica } from '../Caracteristicas';
+import { DatosProductoService } from '../servicios/datos-producto.service';
 
 @Component({
   selector: 'app-detalle-producto',
@@ -11,12 +13,13 @@ export class DetalleProductoComponent implements OnInit {
     public PrecioAntes:number;
     public RutaImg:any;
     public cantidad!:number;
+    
     @Input() Producto:any;
     //---------------------resumen carrito --------------------//
     public MontoTotal:number=0;
     public CantidadTotal:number=0;
     //---------------------------------------------------------//
-  constructor(public DatosProducto:ServicioDetalleProductoService ) {
+  constructor(public DatosProducto:ServicioDetalleProductoService) {
     //----------------Precio antes--------------------------//
     this.PrecioAntes=1.2*this.DatosProducto.precio;
     //-----------------Cantidad de productos--------------------//
@@ -52,12 +55,7 @@ export class DetalleProductoComponent implements OnInit {
           cantidad:num,
           subtotal:num*p}
         )
-        /*
-        for (let index = 0; index < this.DatosProducto.Productos.length; index++) {
-          this.MontoTotal = 
-          this.MontoTotal+this.DatosProducto.Productos[index].precio*this.DatosProducto.Productos[index].cantidad;
-          this.CantidadTotal=this.CantidadTotal+this.DatosProducto.Productos[index].cantidad;
-        }*/
+        
         this.DatosProducto.c_total=this.DatosProducto.c_total+num;
         this.DatosProducto.total=num*p+this.DatosProducto.total;
         
@@ -65,6 +63,9 @@ export class DetalleProductoComponent implements OnInit {
     //-----------------------------------------------------------------//
   ngOnInit(): void {
     this.cantidad=0;
-  }
+    
+    
+    }
 
+  
 }

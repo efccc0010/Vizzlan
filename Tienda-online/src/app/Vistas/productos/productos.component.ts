@@ -1,4 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Producto } from 'src/app/CUS01/Modelo/Producto';
+import { Categoria } from 'src/app/elements/Modelo/Categoria';
+import { Caracteristica } from '../Caracteristicas';
+import { ProductoCaracteristica } from '../ProductoCaracteristica';
+import { DatosProductoService } from '../servicios/datos-producto.service';
 
 @Component({
   selector: 'app-productos',
@@ -11,8 +16,12 @@ export class ProductosComponent implements OnInit {
   @Input() Codigo:any;
   public longitud:any;
   public Menu:any;
-  constructor() { 
-
+  caracteristicas:Caracteristica[]=[]
+  tipoCaracteristicas:Caracteristica[]=[]
+  productos:Producto[]=[]
+  
+  constructor( public rest:DatosProductoService ) { 
+    
     this.Productos=[
       {codigo:'P001',
         nombre:'Jeans 1',
@@ -20,48 +29,7 @@ export class ProductosComponent implements OnInit {
       precio:50,
       indice:1,
       },
-      {codigo:'P002',
-        nombre:'Jeans 2',
-        rutaImg:'./assets/imagenes/P02.jpg',
-        precio:80,
-        indice:2,
-      },
-      {codigo:'P003',
-        nombre:'Jeans 3',
-        rutaImg:'./assets/imagenes/P03.jpg',
-        precio:60,
-        indice:3,  
-      },
-      {codigo:'P004',
-        nombre:'Jeans 4',
-        rutaImg:'./assets/imagenes/P04.jpg',
-        precio:65,
-        indice:4,
-      },
-      {codigo:'P005',
-        nombre:'Jeans 5',
-        rutaImg:'./assets/imagenes/P05.jpg',
-        precio:72,
-        indice:5,
-      },
-      {codigo:'P006',
-        nombre:'Jeans 6',
-        rutaImg:'./assets/imagenes/P06.jpg',
-        precio:80,
-        indice:6,
-      },
-      {codigo:'P007',
-        nombre:'Jeans 7',
-        rutaImg:'./assets/imagenes/P07.jpg',
-        precio:96,
-        indice:7,
-      },
-      {codigo:'P008',
-        nombre:'Jeans 8',
-        rutaImg:'./assets/imagenes/P08.jpg',
-        precio:80,
-        indice:8,
-      }
+      
       ];
       this.longitud=this.Productos.length;
       //----------------Menu de progreso----------------------//
@@ -80,6 +48,35 @@ export class ProductosComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.rest.getCaracteristicas().subscribe(
+      (response)=>{
+        this.caracteristicas=response;
+      },
+      (error)=>{
+        console.log('ups:'+error);
+      }
+    )
+    this.rest.getTipoCaracteristicas().subscribe(
+      (response)=>{
+        this.tipoCaracteristicas=response;
+      },
+      (error)=>{
+        console.log('ups:'+error);
+      }
+    )
+    
   }
-
+  Filtrar(productoCaracteristica:ProductoCaracteristica){
+    console.log(productoCaracteristica)
+    this.rest.getProductos(productoCaracteristica).subscribe(
+      (response)=>{
+        this.productos=response;
+      },
+      (error)=>{
+        console.log('ups:'+error);
+      }
+    )
+    console.log(this.productos)
+  }
+ 
 }

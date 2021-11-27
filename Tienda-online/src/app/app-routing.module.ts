@@ -26,7 +26,7 @@ const routes: Routes = [
   {path:'Ingresar',component:IngresarComponent},
   {path:'Carrito-compra',component:CarritoCompraComponent},
   {path:'Pedido-especial',component:PedidoEspecialComponent},
-  {path:'detalle-producto',component:DetalleProductoComponent},
+  {path:'detalleProducto',component:DetalleProductoComponent},
   {path:'RegistroEnvio',component:RegistroEnvioComponent},
   {path:'Calculo-costo',component:CalculoCostoComponent},
   {path:'PagarPedidoEstandar',component:PagarPedidoEstandarComponent},

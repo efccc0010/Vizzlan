@@ -47,56 +47,28 @@
             <th scope="col">Codigo</th>
             <th scope="col">Fecha</th>
             <th scope="col">Estado de Evaluacion</th>
-            <th scope="col">Administrador</th>
             <th scope="col">Modificar Estado</th>
+            <th scope="col">Monto total</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">AAA01</th>
-            <th><input type="date" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock"></th>
-            <th scope="row">No Evaluado</th>
-            <th>AD0001</th>
+          <tr *ngFor="let pedido of pedidos">
+            <th scope="row">{{pedido.idPedido}}</th>
+            <th><input [value]="pedido.fechaInicio" type="date" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock"></th>
+            <th scope="row">{{pedido.estado}}</th>
+            
             <th>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Seleccion Estado</option>
+              <select class="form-select" aria-label="Default select example" >
+                <option selected>{{pedido.estado}}</option>
                 <option value="1">Confirmacion Pedido</option>
                 <option value="2">Pedido Produccion</option>
                 <option value="3">Pedido Listo</option>
-                <option value="3">Listo para envio</option>
+                <option value="4">Listo para envio</option>
               </select>
             </th>
+            <th scope="row">{{pedido.montoTotal}}</th>
           </tr>
-          <tr>
-            <th scope="row">AAA02</th>
-            <th><input type="date" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock"></th>
-            <th scope="row">Evaluado</th>
-            <th>AD0001</th>
-            <th>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Seleccion Estado</option>
-                <option value="1">Confirmacion Pedido</option>
-                <option value="2">Pedido Produccion</option>
-                <option value="3">Pedido Listo</option>
-                <option value="3">Listo para envio</option>
-              </select>
-            </th>
-          </tr>
-          <tr>
-            <th scope="row">AAA03</th>
-            <th><input type="date" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock"></th>
-            <th scope="row">No Evaluado</th>
-            <th>AD0002</th>
-            <th>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Seleccion Estado</option>
-                <option value="1">Confirmacion Pedido</option>
-                <option value="2">Pedido Produccion</option>
-                <option value="3">Pedido Listo</option>
-                <option value="3">Listo para envio</option>
-              </select>
-            </th>
-          </tr>
+          
         </tbody>
       </table> 
     
@@ -107,4 +79,5 @@
       </div>  
     </div>
   </div>
-
+<div>
+</div>

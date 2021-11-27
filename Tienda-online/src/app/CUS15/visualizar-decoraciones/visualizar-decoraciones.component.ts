@@ -64,6 +64,7 @@ export class VisualizarDecoracionesComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    
   }
-
+  
 }

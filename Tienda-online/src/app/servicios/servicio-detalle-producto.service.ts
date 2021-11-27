@@ -25,4 +25,6 @@ export class ServicioDetalleProductoService {
       public Monto:number=0;
   //----------------------------------------//
   constructor() { }
+
+  
 }

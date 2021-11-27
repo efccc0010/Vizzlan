@@ -35,6 +35,8 @@ import { FormDisenoComponent } from './CUS18/form-diseno/form-diseno.component';
 import { PedidoProduccionPlantillaComponent } from './CUS17/pedido-produccion-plantilla/pedido-produccion-plantilla.component';
 import { VisualizarEstadoProduccionComponent } from './CUS13/visualizar-estado-produccion/visualizar-estado-produccion.component';
 import { VisualizarEstadoEspecialComponent } from './CUS13/visualizar-estado-especial/visualizar-estado-especial.component';
+import {  HttpClientModule } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -69,12 +71,14 @@ import { VisualizarEstadoEspecialComponent } from './CUS13/visualizar-estado-esp
     FormDisenoComponent,
     PedidoProduccionPlantillaComponent,
     VisualizarEstadoProduccionComponent,
-    VisualizarEstadoEspecialComponent
+    VisualizarEstadoEspecialComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
